@@ -5,11 +5,6 @@ import { CheckCircle } from "lucide-react";
 
 import ContactSection from '@/components/ContactSection';
 
-const industries = [
-    { name: "PROFAST CONE PRFMQ SERIES", link: "/products/semimobileseries/prfmqseries" },
-    { name: "PROFAST CONE PRFMC SERIES", link: "/products/semimobileseries/prfmcseries" },
-
-  ];
 
 const steps = [
   "Quarrying & Mining",
@@ -26,7 +21,7 @@ export default function AIChatbotFinancing() {
       <section className="py-20 px-6 bg-[#ec6b24] text-white flex flex-col md:flex-row items-center gap-10">
         <div className="w-full md:w-1/2">
           <Image
-            src="/semimobileseries/PC1.jpg"
+            src="/semimobileseries/PC1.png"
             alt="AI Chatbot Financing"
             width={800}
             height={500}
@@ -153,7 +148,7 @@ export default function AIChatbotFinancing() {
 </section>
 
 
-            <section>
+            {/* <section>
         <div className="bg-white text-blue-900 px-6 py-16 mb-15 mt-10">
       <h2 className="text-3xl text-blue-900 hover:text-[#ec6b24] font-bold mb-10">
         Types of Profast Cone
@@ -172,7 +167,7 @@ export default function AIChatbotFinancing() {
         ))}
       </div>
     </div>
-      </section>
+      </section> */}
      
 
       <ContactSection />

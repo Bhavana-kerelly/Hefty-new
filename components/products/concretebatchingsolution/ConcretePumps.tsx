@@ -16,7 +16,7 @@ export default function RollCrusher() {
             
             <div className="rounded-xl overflow-hidden shadow-md">
               <Image
-                src="/crushers/S1.png" // make sure to place the image in /public folder
+                src="/crushers/R1.jpg" // make sure to place the image in /public folder
                 alt="Team"
                 width={700}
                 height={400}
@@ -29,18 +29,18 @@ export default function RollCrusher() {
           {/* Right Side */}
           <div className="text-gray-700 text-lg space-y-6">
             <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] leading-tight mb-6">
-             SAND WASHING UNIT
+             ROLL CRUSHER
             </h2>
             <p className='text-base text-gray-700'>
-            Sand Washer improves material quality and the versatility of sand making it suitable for multiple applications. Advanced technology integrated with the innovative bucket wheel design results in seamless and streamlined sand washing.
+            New generation Roll Crusher has been designed using latest engineering tools for high reliability. It has premium features like high-efficiency gear drive and hydraulic gap management. Its features and the unique design help manufacture sand at lowest possible power consumption and liner wear cost.
             </p>
             <p className="text-base text-gray-700">Product Highlights:</p>
             <ol className='text-base text-gray-700'>
-              <li>Heavy-duty construction to accommodate large volumes of feeds</li>
-              <li>Speed reduction through Planetary gears increases torque making maintenance easy</li>
-              <li>VFD controlled bucket wheel calibrations help adjust the level of ﬁnesse in the output, as per requirement</li>
-              <li>Erosion resistant Spiral Wheels lined with Hardox Wear plates</li>
-              <li>Anti-corrosive and anti-rust protection coating for the water trough</li>
+              <li>High efficiency & low peripheral speed to deliver high savings in power & wear cost.</li>
+              <li>Robust, reliable and safe design.</li>
+              <li>Hydraulics for medium pressure grinding with high crushing forces.</li>
+              <li>Large diameter and extra thick liner design allow larger feed size and high liner change interval.</li>
+              <li>Hydraulics ensure operating gap is maintained to ensure desired output size & low percentage recycle.</li>
             </ol>
             
           </div>

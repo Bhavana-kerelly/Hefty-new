@@ -3,55 +3,28 @@
 import Image from 'next/image';
 import { CheckCircle } from "lucide-react";
 
+
+
 import ContactSection from '@/components/ContactSection';
-import React, { useState } from "react";
-
-const faqs = [
-  {
-    question: "Advanced Mixing Technology",
-    answer:
-      "Our batching plants use state-of-the-art mixing systems to ensure perfect blending of cement, aggregates, water, and admixtures for superior concrete quality.",
-  },
-  {
-    question: "Customizable Configurations",
-    answer: "Available in stationary, mobile, and compact models — we tailor the plant design to match your project needs and site conditions.",
-  },
-  {
-    question: "High Output Capacity",
-    answer: "From small to large-scale production, our plants handle a wide range of capacities to keep up with tight deadlines without compromising quality.",
-  },
-  {
-    question: "Automated Control Systems",
-    answer: "Fully equipped with intelligent automation for real-time monitoring, accurate dosing, and seamless operation with minimal manual intervention.",
-  },
-  {
-    question: "Eco-Friendly Operation",
-    answer: "Designed for minimal waste generation, dust suppression, and energy efficiency to meet modern environmental standards.",
-  },
-];
 
 
-const steps = [
-  "Road & Highway Projects",
-"Bridges & Flyovers",
-"Commercial & Residential Buildings",
-"Industrial & Infrastructure Projects",
-];
+const industries = [
+    { name: "Concrete Batching Plant", link: "/products/concretebatchingsolution/concretebatchingplant" },
+    { name: "Concrete Pumps", link: "/products/concretebatchingsolution/concretepumps" },
+
+    { name: "Wetmix Macadam Plant", link: "/products/concretebatchingsolution/wetmixmacadamplant" },
+
+
+  ];
 
 
 export default function Crushers() {
-    const [activeIndex, setActiveIndex] = useState<number | null>(0);
-  
-    const toggleFAQ = (index: number) => {
-      setActiveIndex(index === activeIndex ? null : index);
-    };
-  
   return (
     <>
       <section className="py-20 px-6  bg-[#ec6b24] text-white flex flex-col md:flex-row items-center gap-10">
         <div className="w-full md:w-1/2">
           <Image
-            src="/concrete/C1.jpg"
+            src="/mobileseries/M1.png"
             alt="Office"
             width={800}
             height={500}
@@ -60,42 +33,43 @@ export default function Crushers() {
         </div>
         <div className="w-full md:w-1/2">
           <h2 className="text-3xl font-bold mb-5">
-           Concrete Batching Solutions
+           Precision, Efficiency, and Reliability in Every Batch
           </h2>
           <p className="text-base text-gray-200 mb-6">
-          Our Concrete Batching Solutions are engineered to deliver consistent, high-quality concrete while optimizing efficiency and reducing operational costs. Whether you’re working on infrastructure projects, commercial buildings, or large-scale construction, our batching systems ensure precise mixing, uniform consistency, and unmatched reliability.
+           In the fast-paced world of construction and mining, precision, speed, and consistency are paramount. Hefty’s Concrete Batching Solution offers a state-of-the-art system designed to deliver high-quality concrete production with exceptional efficiency and accuracy. Built for the toughest environments, our batching solutions are engineered to optimize your concrete production process, reduce waste, and accelerate project timelines.
           </p>
-         
+          
         </div>
       </section>
       
-      <section className="w-full px-6 py-12 md:py-20 bg-white flex justify-center">
+      <section className="w-full px-6 py-12 md:py-20 bg-white  flex justify-center">
         <div className="max-w-7xl text-center">
+          
 
-          {/* center Side */}
+          {/* Right Side */}
           <div className="text-gray-700 text-lg space-y-6">
             <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] leading-tight mb-6">
-            Key Features
+              What is a Concrete Batching Solution?
             </h2>
-            <ol className="text-base text-black mb-6">
-              <li>Precision aggregate weighing and feeding</li>
-              <li>Robust and durable structure for long-term use</li>
-              <li>Easy maintenance with minimal downtime</li>
-              <li>Rapid installation and relocation (for mobile units)</li>
-              
-            </ol>
+            <p className='text-base text-gray-700'>
+              Concrete Batching Solutions are specialized systems that combine the precise measurement, mixing, and handling of raw materials — such as cement, aggregates, water, and additives — to produce high-quality concrete in a controlled and consistent manner. These systems are essential for large-scale construction projects where uniformity, speed, and operational efficiency are critical.
+
+            </p>
+            <p className='text-base text-gray-700'>
+             Hefty’s Concrete Batching Solution includes fully automated plants or modular systems that integrate seamlessly into your construction site or quarry operations, providing flexibility for both mobile and stationary applications.
+
+            </p>
           </div>
         </div>
       </section>
-     
       
      
-          <section className="bg-[#ec6b24] text-white px-8 py-16">
-            <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+          <section className="bg-[#ec6b24] text-white px-8 py-16 ">
+            <div className="max-w-7xlmax-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
               {/* Left Section */}
               <div>
                 <h4 className="uppercase text-sm font-semibold underline underline-offset-4 mb-4">
-                  Highlights 
+                  Key Benefits of Hefty Concrete Batching Solutions
                 </h4>
                 <h2 className="text-4xl font-bold leading-tight mb-4">
                   Hefty –<br />
@@ -104,7 +78,9 @@ export default function Crushers() {
                   <span className="text-gray-700">& Screening</span>
                 </h2>
                 
-                <p className='text-gray-900 text-sm'>At Hefty, we understand that a crusher isn’t just a machine – it’s the heart of your operation. That’s why our crushers are built with a commitment to engineering excellence, operational reliability, and long-term value.</p><br/>
+                <p className='text-gray-900 text-sm'>Discover how Hefty’s Concrete Batching Solutions 
+can transform your project efficiency, reduce costs, and improve the quality of concrete production. Our team is ready to help you design, install, and maintain a system tailored to your specific needs.
+</p><br/>
                 <button className="border border-blue-900 text-white px-6 py-3 hover:bg-blue-900 transition flex items-center gap-2 mt-5">
                   <span className="text-blue-900">&#8213;</span> Get In Touch
                 </button>
@@ -113,83 +89,89 @@ export default function Crushers() {
               {/* Right Section */}
               <div className="space-y-6">
                 <div className="border border-gray-700 p-6">
-                  <h3 className="text-xl text-white font-semibold mb-2">Additional scope like silo & its accessories, chilling unit, weigh bridge & diesel generators can be offered upon request.</h3>
-                 
-                </div>
-                <div className="border border-gray-700 p-6">
-                  <h3 className="text-xl text-white font-semibold mb-2">Technical parameters mentioned here are standard and scope of supply will be finalised upon mutual agreement.</h3>
-                  
+                  <h3 className="text-xl text-white font-semibold mb-2">Precision Mixing for Superior Quality</h3>
+                  <p className="text-sm text-white">
+                    Achieve the highest concrete quality by precisely measuring and mixing components according to strict specifications, ensuring uniform consistency and strength in every batch.
+                  </p>
                   
                 </div>
                 <div className="border border-gray-700 p-6">
-                  <h3 className="text-xl text-white font-semibold mb-2">Attracts additional technical, cost and delivery time.</h3>
-                   
+                  <h3 className="text-xl text-white font-semibold mb-2">Enhanced Operational Efficiency</h3>
+                   <p className="text-sm text-white">
+                   Automated control systems streamline the entire batching process, significantly reducing manual intervention, human error, and material waste, while accelerating production speed.
+                  </p>
                   
+                </div>
+                <div className="border border-gray-700 p-6">
+                  <h3 className="text-xl text-white font-semibold mb-2">Flexibility for All Project Sizes</h3>
+                   <p className="text-sm text-white">
+                  Whether for large infrastructure projects or small-scale construction tasks, Hefty offers modular solutions that can be customized for any project size or production capacity requirement.
+                  </p>
                 </div>
                  <div className="border border-gray-700 p-6">
-                  <h3 className="text-xl text-white font-semibold mb-2">Specific mixer make if any, can be offered upon request.</h3>
-                
+                  <h3 className="text-xl text-white font-semibold mb-2">Reduced Environmental Impact</h3>
+                   <p className="text-sm text-white">
+                  With optimized material use and energy-efficient designs, our solutions help reduce CO₂ emissions, lower energy consumption, and contribute to sustainable construction practices.
+                  </p>
                 </div>
-                 
+                 <div className="border border-gray-700 p-6">
+                  <h3 className="text-xl text-white font-semibold mb-2">Durability in Harsh Environments</h3>
+                   <p className="text-sm text-white">
+                 Engineered for the construction and mining industries, our batching systems are built to withstand the most rugged sites, ensuring continuous, reliable operation under extreme conditions.
+                  </p>
+                </div>
+                 <div className="border border-gray-700 p-6">
+                  <h3 className="text-xl text-white font-semibold mb-2">Seamless Integration</h3>
+                   <p className="text-sm text-white">
+                 Hefty’s batching solutions integrate perfectly with existing site logistics and other Hefty equipment, such as crushers and conveyors, allowing a smoother workflow and improved site productivity.
+                  </p>
+                </div>
+               
               </div>
             </div>
           </section>
-         <section className="bg-gray-200 px-6 py-12 md:py-20 w-full flex justify-center">
-                    <div className="max-w-7xl text-center gap-12">
-                      <div>
-                        <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] mb-4">
-                          Applications
-                        </h2>
-                        
-                        <ul className="space-y-4">
-                          {steps.map((step, idx) => (
-                            <li key={idx} className="flex items-start gap-3 text-gray-800 text-base md:text-lg">
-                              <CheckCircle className="text-blue-900 mt-1" size={20} />
-                              {step}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-                  </section>
+        
+
+      <section className="bg-gray-200 px-6 py-12 md:py-20 w-full flex items-center justify-center">
+  <div className="max-w-4xl text-center">
+    <h2 className="text-3xl text-blue-900 hover:text-[#ec6b24] font-bold leading-tight mb-4">
+      Global Reach – Why Choose Hefty’s Concrete Batching Solution?
+    </h2>
+    <p className="text-black text-base mb-6">
+      At Hefty, we understand the demanding requirements of modern construction and mining projects.
+      Our commitment to engineering excellence ensures that every batching solution we offer stands
+      for durability, precision, and high performance. From modular setups for quick deployment to
+      fully customized fixed plants, we deliver solutions that reduce costs, improve efficiency, and
+      provide consistent quality – all backed by our expert technical support.
+    </p>
+  </div>
+</section>
+
+    
+     <section>
+        <div className="bg-white text-blue-900 px-6 py-16 mb-15 mt-10">
+      <h2 className="text-3xl text-blue-900 hover:text-[#ec6b24] font-bold mb-10">
+        Concrete Batching Solutions
+      </h2>
       
 
-      <div className=" flex-col bg-white lg:flex-row items-center  px-6 py-16 max-w-7xl mx-auto flex justify-center">
-      {/* Left Side: FAQ */}
-      <div className="w-full lg:w-1/2">
-        <h2 className="text-blue-900 hover:text-[#ec6b24] text-4xl font-bold mb-6 ">Why Choose Our Concrete Batching Solutions?</h2>
-        {faqs.map((faq, index) => (
-          <div
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
+        {industries.map((item, index) => (
+          <a
             key={index}
-            className={`border-b ${
-              index === activeIndex ? "border-[#ec6b24]" : "border-gray-300"
-            } py-4 cursor-pointer`}
-            onClick={() => toggleFAQ(index)}
+            href={item.link}
+            className="border border-blue-900 rounded-md py-6 px-4 flex items-center justify-center hover:bg-[#ec6b24] transition text-sm font-medium text-center"
           >
-            <div className="flex justify-between items-center">
-              <p
-                className={`font-semibold text-lg ${
-                  index === activeIndex ? "text-[#ec6b24]" : "text-blue-900"
-                }`}
-              >
-                {faq.question}
-              </p>
-              <span className="text-xl">
-                {index === activeIndex ? "−" : "+"}
-              </span>
-            </div>
-            {index === activeIndex && (
-              <p className="text-gray-600 mt-3 text-sm leading-relaxed">
-                {faq.answer}
-              </p>
-            )}
-          </div>
+            {item.name}
+          </a>
         ))}
       </div>
     </div>
+      </section>
+    
     <ContactSection />
     
+      
     </>
-
-);
+  );
 }

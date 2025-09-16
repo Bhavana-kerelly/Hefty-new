@@ -27,7 +27,7 @@ export default function AIChatbotFinancing() {
       <section className="py-20 px-6 bg-[#ec6b24] text-white flex flex-col md:flex-row items-center gap-10">
         <div className="w-full md:w-1/2">
           <Image
-            src="/mobileseries/TE1.jpg"
+            src="/semimobileseries/E1.png"
             alt="AI Chatbot Financing"
             width={800}
             height={500}

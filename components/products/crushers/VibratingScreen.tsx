@@ -16,7 +16,7 @@ export default function RollCrusher() {
             
             <div className="rounded-xl overflow-hidden shadow-md">
               <Image
-                src="/crushers/S1.png" // make sure to place the image in /public folder
+                src="/crushers/VS1.png" 
                 alt="Team"
                 width={700}
                 height={400}
@@ -29,18 +29,18 @@ export default function RollCrusher() {
           {/* Right Side */}
           <div className="text-gray-700 text-lg space-y-6">
             <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] leading-tight mb-6">
-             SAND WASHING UNIT
+             VIBRATING SCREEN
             </h2>
             <p className='text-base text-gray-700'>
-            Sand Washer improves material quality and the versatility of sand making it suitable for multiple applications. Advanced technology integrated with the innovative bucket wheel design results in seamless and streamlined sand washing.
+            Hefty Vibrating Screens area methodical multi-tier screening system suited for bigger, medium and ﬁne-sized separation applications. The vibrating screen is designed with longer wear life, easy maintenance and lower noise levels to address all of the challenges in the environment and to improve function.
             </p>
             <p className="text-base text-gray-700">Product Highlights:</p>
             <ol className='text-base text-gray-700'>
-              <li>Heavy-duty construction to accommodate large volumes of feeds</li>
-              <li>Speed reduction through Planetary gears increases torque making maintenance easy</li>
-              <li>VFD controlled bucket wheel calibrations help adjust the level of ﬁnesse in the output, as per requirement</li>
-              <li>Erosion resistant Spiral Wheels lined with Hardox Wear plates</li>
-              <li>Anti-corrosive and anti-rust protection coating for the water trough</li>
+              <li>Excellent performance with high volume and high detailed screening </li>
+<li>The slope inclination can be altered to ﬁt any type of material or application</li>
+<li>Interconnected levels provide higher torque & reliable suspension</li>
+<li>Regulated Stroke adjustment and greased lubrication</li>
+<li>Wearing & frequent maintenance reduces downtime and operating costs.</li>
             </ol>
             
           </div>

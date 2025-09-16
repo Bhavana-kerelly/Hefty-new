@@ -13,6 +13,7 @@ import CcQmSeries from "@/components/products/crushers/CcQmSeries";
 import GyratoryConeCrusher from "@/components/products/crushers/GyratoryConeCrusher";
 import RollCrushers from "@/components/products/crushers/RollCrushers";
 import SandWashingUnit from "@/components/products/crushers/SandWashingUnit";
+import VibratingScreen from "@/components/products/crushers/VibratingScreen";
 
 
 import MobileSeries from "@/components/products/mobileseries/MobileSeries";
@@ -48,7 +49,7 @@ import VerticalShiftImpactor from "@/components/products/impactors/VerticalShift
 import HorizontalShiftImpactor from "@/components/products/impactors/HorizontalShiftImpactor";
 
 import Screens from "@/components/products/screens/Screens";
-import VibratingScreen from "@/components/products/screens/VibratingScreen";
+// import VibratingScreen from "@/components/products/screens/VibratingScreen";
 
 
 import WashingSystems from "@/components/products/washingsystems/WashingSystems";
@@ -63,6 +64,9 @@ import Classifier from "@/components/products/classifier/Classifier";
 import ProAirClassifier from "@/components/products/classifier/ProAirClassifier";
 
 import ConcreteBatchingSolution from "@/components/products/concretebatchingsolution/ConcreteBatchingSolution";
+import ConcreteBatchingPlant  from "@/components/products/concretebatchingsolution/ConcreteBatchingPlant";
+import ConcretePumps from "@/components/products/concretebatchingsolution/ConcretePumps";
+import WetmixMacadamPlant from "@/components/products/concretebatchingsolution/WetmixMacadamPlant";
 
 import MechanicalRoadPaver from "@/components/products/mechanicalroadpaver/MechanicalRoadPaver";
 
@@ -79,6 +83,7 @@ const productsMap: Record<string, React.ComponentType> = {
   gyratoryconecrusher: GyratoryConeCrusher,
   rollcrushers: RollCrushers,
   sandwashingunit: SandWashingUnit,
+  vibratingscreen: VibratingScreen,
   
 
   mobileseries: MobileSeries,
@@ -116,7 +121,7 @@ const productsMap: Record<string, React.ComponentType> = {
   verticalshiftimpactor: VerticalShiftImpactor,
 
   screens: Screens,
-  vibratingscreen: VibratingScreen,
+  // vibratingscreen: VibratingScreen,
 
   washingsystems: WashingSystems,
   dualsandwasher: DualSandWasher,
@@ -130,6 +135,11 @@ const productsMap: Record<string, React.ComponentType> = {
   proairclassifier: ProAirClassifier,
 
   concretebatchingsolution: ConcreteBatchingSolution,
+  concretebatchingplant: ConcreteBatchingPlant,
+  concretepumps: ConcretePumps,
+  wetmixmacadamplant: WetmixMacadamPlant,
+
+  
   mechanicalroadpaver: MechanicalRoadPaver,
   evdumpertruck: EvDumperTruck,
   evtractortrailertruck: EvTractorTrailerTruck,

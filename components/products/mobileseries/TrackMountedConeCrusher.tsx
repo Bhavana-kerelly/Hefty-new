@@ -5,11 +5,7 @@ import { CheckCircle } from "lucide-react";
 
 import ContactSection from '@/components/ContactSection';
 
-const industries = [
-    { name: "Track Mounted Cone – QM Series", link: "/products/mobileseries/tmcqm" },
-    { name: "Track Mounted Cone – AVC Series", link: "/products/mobileseries/tmcavc" },
 
-  ];
 
 const steps = [
   "High crushing ratio for superior quality output",
@@ -26,7 +22,7 @@ export default function TrackMountedConeCrusher() {
       <section className="py-20 px-6 bg-[#ec6b24] text-white flex flex-col md:flex-row items-center gap-10">
         <div className="w-full md:w-1/2">
           <Image
-            src="/mobileseries/TC1.jpg"
+            src="/semimobileseries/PC1.png"
             alt="AI Chatbot Financing"
             width={800}
             height={500}
@@ -143,7 +139,7 @@ export default function TrackMountedConeCrusher() {
   </div>
 </section>
 
-            <section>
+            {/* <section>
         <div className="bg-white text-blue-900 px-6 py-16 mb-15 mt-10">
       <h2 className="text-3xl text-blue-900 hover:text-[#ec6b24] font-bold mb-10">
         Types of Cone Crushers
@@ -163,7 +159,7 @@ export default function TrackMountedConeCrusher() {
       </div>
     </div>
       </section>
-     
+      */}
       <ContactSection />
       
     </>

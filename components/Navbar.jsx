@@ -95,13 +95,13 @@ export default function Header() {
                     <a href="/products/crushers/gyratoryconecrusher" className="ml-5 hover:text-black transition-colors">Gyratory Cone Crusher</a> */}
                     <a href="/products/crushers/impactors" className="hover:text-black transition-colors">Impactors</a>
 
-                    <a href="/products/crushers/rollcrushers" className="hover:text-black transition-colors">Vibrating Screen</a>
+                    <a href="/products/crushers/vibratingscreen" className="hover:text-black transition-colors">Vibrating Screen</a>
                     <a href="/products/crushers/feeders" className="hover:text-black transition-colors">Feeders</a>
                     
                     <a href="/products/crushers/sandwashingunit" className="hover:text-black transition-colors">Sand Washing Units</a>
                     
                     <a href="/products/mobileseries/mobileseries" className="hover:text-black transition-colors">Track Mounted (Mobile) Crushers</a>
-                    <a href="/products/semimobileseries/semimobileseries" className="hover:text-black transition-colors">Trolly Mpunted(Semi Model) Crushers</a>
+                    <a href="/products/semimobileseries/semimobileseries" className="hover:text-black transition-colors">Track Mounted(Semi Mobile) Crushers</a>
                   
                     
                   </div>
@@ -109,11 +109,11 @@ export default function Header() {
                   {/* Column 2: Mobile Series */}
                   <div className="flex flex-col space-y-3">
                     <div className="font-semibold text-base mb-2">
-                      <a href="/products/mobileseries/mobileseries" className="text-[#e96a32] hover:text-black transition-colors">Concrete batching Solutions</a>
+                      <a href="/products/concretebatchingsolution/concretebatchingsolution" className="text-[#e96a32] hover:text-black transition-colors">Concrete batching Solutions</a>
                     </div>
-                   <a href="/products/mobileseries/trackmountedverticalshiftimpactor" className="hover:text-black transition-colors">Concerete Batching Plant</a>
-                    <a href="/products/mobileseries/trackmountedscalper" className="hover:text-black transition-colors">Concrete Pumps </a>
-                    <a href="/products/mobileseries/trackmountedjawcrusher" className="hover:text-black transition-colors">Wetmix Macadam Plant</a>
+                   <a href="/products/concretebatchingsolution/concretebatchingplant" className="hover:text-black transition-colors">Concerete Batching Plant</a>
+                    <a href="/products/concretebatchingsolution/concretepumps" className="hover:text-black transition-colors">Concrete Pumps </a>
+                    <a href="/products/concretebatchingsolution/wetmixmacadamplant" className="hover:text-black transition-colors">Wetmix Macadam Plant</a>
                     {/* <a href="/products/mobileseries/jaw811" className="ml-6 hover:text-black transition-colors">Jaw 811</a>
                     <a href="/products/mobileseries/jaw811s" className="ml-6 hover:text-black transition-colors">Jaw 811S</a> 
                     <a href="/products/mobileseries/trackmountedconecrusher" className="hover:text-black transition-colors">Track Mounted Cone Crusher</a>
