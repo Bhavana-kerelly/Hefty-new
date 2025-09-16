@@ -16,7 +16,7 @@ export default function RollCrusher() {
             
             <div className="rounded-xl overflow-hidden shadow-md">
               <Image
-                src="/crushers/R1.jpg" // make sure to place the image in /public folder
+                src="/concrete/W1.png" // make sure to place the image in /public folder
                 alt="Team"
                 width={700}
                 height={400}
@@ -29,18 +29,21 @@ export default function RollCrusher() {
           {/* Right Side */}
           <div className="text-gray-700 text-lg space-y-6">
             <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] leading-tight mb-6">
-             ROLL CRUSHER
+             Wet Mix Macadam Plant?
             </h2>
             <p className='text-base text-gray-700'>
-            New generation Roll Crusher has been designed using latest engineering tools for high reliability. It has premium features like high-efficiency gear drive and hydraulic gap management. Its features and the unique design help manufacture sand at lowest possible power consumption and liner wear cost.
+            A Wet Mix Macadam (WMM) Plant is a specialized system used in road construction to produce a high-quality, mechanically stabilized layer of aggregate mixed with water and binding agents (such as cement) in precise proportions. Unlike dry mix methods, the wet mix process ensures uniform coating and compaction of aggregates, improving road strength, durability, and load-bearing capacity.
+            </p>
+            <p className='text-base text-gray-700'>
+            Hefty’s Wet Mix Macadam Plants are engineered for high performance, providing reliable, efficient, and consistent production of stabilized macadam suitable for highways, urban roads, and heavy-duty industrial pavements.
             </p>
             <p className="text-base text-gray-700">Product Highlights:</p>
             <ol className='text-base text-gray-700'>
-              <li>High efficiency & low peripheral speed to deliver high savings in power & wear cost.</li>
-              <li>Robust, reliable and safe design.</li>
-              <li>Hydraulics for medium pressure grinding with high crushing forces.</li>
-              <li>Large diameter and extra thick liner design allow larger feed size and high liner change interval.</li>
-              <li>Hydraulics ensure operating gap is maintained to ensure desired output size & low percentage recycle.</li>
+              <li> Consistent Material Blending </li>
+              <li>High Production Capacity</li>
+              <li>Fully Automated Control System</li>
+              <li>Mobile & Stationary Options</li>
+              <li>Energy-Efficient Design</li>
             </ol>
             
           </div>

@@ -5,6 +5,13 @@ import { CheckCircle } from "lucide-react";
 
 import ContactSection from '@/components/ContactSection';
 
+const industries = [
+    { name: "CDH50", link: "#products/concretebatchingsolution/CDH50" },
+    { name: "CDH70", link: "#products/concretebatchingsolution/CDH70" },
+    
+
+  ];
+
 export default function RollCrusher() {
   return (
     <>
@@ -16,7 +23,7 @@ export default function RollCrusher() {
             
             <div className="rounded-xl overflow-hidden shadow-md">
               <Image
-                src="/crushers/R1.jpg" // make sure to place the image in /public folder
+                src="/concrete/CP1.png" // make sure to place the image in /public folder
                 alt="Team"
                 width={700}
                 height={400}
@@ -29,22 +36,46 @@ export default function RollCrusher() {
           {/* Right Side */}
           <div className="text-gray-700 text-lg space-y-6">
             <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] leading-tight mb-6">
-             ROLL CRUSHER
+             Concrete Pump 
             </h2>
             <p className='text-base text-gray-700'>
-            New generation Roll Crusher has been designed using latest engineering tools for high reliability. It has premium features like high-efficiency gear drive and hydraulic gap management. Its features and the unique design help manufacture sand at lowest possible power consumption and liner wear cost.
+           A Concrete Pump is a vital piece of construction equipment designed to transport liquid concrete from the batching plant to the desired location on-site. It uses hydraulic pressure to pump concrete through pipelines or hoses, allowing for fast, precise, and efficient placement of concrete even in hard-to-reach areas such as high-rise buildings, large slabs, and remote job sites
+            </p>
+            <p className='text-base text-gray-700'>
+           Hefty offers both Boom Concrete Pumps and Line Concrete Pumps, ideal for a wide range of construction and mining applications, delivering high performance and reliability in challenging environments.
             </p>
             <p className="text-base text-gray-700">Product Highlights:</p>
             <ol className='text-base text-gray-700'>
-              <li>High efficiency & low peripheral speed to deliver high savings in power & wear cost.</li>
-              <li>Robust, reliable and safe design.</li>
-              <li>Hydraulics for medium pressure grinding with high crushing forces.</li>
-              <li>Large diameter and extra thick liner design allow larger feed size and high liner change interval.</li>
-              <li>Hydraulics ensure operating gap is maintained to ensure desired output size & low percentage recycle.</li>
+              <li>High Pumping Pressure</li>
+              <li>Robust Hydraulic System</li>
+              <li>Mobile & Stationary Solutions</li>
+              <li>Efficient & Fast Operation</li>
+              <li> Durable & Heavy-Duty Build</li>
             </ol>
             
           </div>
         </div>
+      </section>
+
+      <section>
+        <div className="bg-gray-200 text-blue-900 px-6 py-16 mb-15 mt-10">
+      <h2 className="text-3xl text-blue-900 hover:text-[#ec6b24] font-bold mb-10">
+        Concrete Pumps
+      </h2>
+      
+
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
+        {industries.map((item, index) => (
+          <a
+            key={index}
+            href={item.link}
+            className="border border-blue-900 rounded-md py-6 px-4 flex items-center justify-center hover:bg-[#ec6b24] transition text-sm font-medium text-center"
+          >
+            {item.name}
+          </a>
+        ))}
+      </div>
+    </div>
       </section>
 
      <ContactSection />

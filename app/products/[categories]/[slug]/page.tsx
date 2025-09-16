@@ -74,6 +74,8 @@ import EvDumperTruck from "@/components/products/evdumpertruck/EvDumperTruck";
 
 import EvTractorTrailerTruck from "@/components/products/evtractortrailertruck/EvTractorTrailerTruck";
 
+import DieselGenerators from "@/components/products/dieselgenerators/DieselGenerators";
+
 const productsMap: Record<string, React.ComponentType> = {
   crushers: Crushers,
   jawcrushers: JawCrushers,
@@ -143,6 +145,8 @@ const productsMap: Record<string, React.ComponentType> = {
   mechanicalroadpaver: MechanicalRoadPaver,
   evdumpertruck: EvDumperTruck,
   evtractortrailertruck: EvTractorTrailerTruck,
+
+  dieselgenerators: DieselGenerators,
 
 };
 

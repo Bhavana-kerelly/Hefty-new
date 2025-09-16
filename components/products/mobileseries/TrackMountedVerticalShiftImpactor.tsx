@@ -43,37 +43,26 @@ export default function AIChatbotFinancing() {
       </section>
 
       {/* What We Finance */}
-      <section className="w-full px-6 py-12 md:py-20 bg-white">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          <div>
-            <div className="rounded-xl overflow-hidden shadow-md">
-              <Image
-                src="/mobileseries/TMV2.jpg"
-                alt="Chatbot Financing Scope"
-                width={700}
-                height={400}
-                className="w-full h-auto object-cover"
-              />
-            </div>
-          </div>
-          <div className="text-gray-700 text-lg space-y-6">
-            <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] leading-tight mb-6">
-           Silent Features:
-            </h2>
-            <ol>
-              <li>1) Dust Supression System</li>
-              <li>2) Light Mast (Opening Feature)</li>
-              <li>3) Power Source with Acoustic Canopy</li>
-              <li>4) Rotor Ports & Impact Cartridge options</li>
-              <li>5) Feeding Control System</li>
-              <li>6) Motorized Pulley</li>
-              <li>7) Wireless Tracking Remote</li>
-              <li>8) Dual Power Import</li>
-            </ol>
-           
-          </div>
-        </div>
-      </section>
+  <section className="w-full px-6 py-12 md:py-20 bg-white flex justify-center">
+  <div className="max-w-3xl text-center text-gray-700 text-lg">
+    <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] leading-tight mb-6">
+      Silent Features:
+    </h2>
+
+    <ol className="list-decimal list-inside space-y-3 inline-block text-left">
+      <li>Dust Suppression System</li>
+      <li>Light Mast (Opening Feature)</li>
+      <li>Power Source with Acoustic Canopy</li>
+      <li>Rotor Ports & Impact Cartridge options</li>
+      <li>Feeding Control System</li>
+      <li>Motorized Pulley</li>
+      <li>Wireless Tracking Remote</li>
+      <li>Dual Power Import</li>
+    </ol>
+  </div>
+</section>
+
+
 
        <section className="bg-[#ec6b24] text-white px-8 py-16">
             <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">

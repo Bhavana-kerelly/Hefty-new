@@ -161,7 +161,7 @@ export default function Header() {
                   {/* Column 5: Screens, Washing, Concrete */}
                   <div className="flex flex-col space-y-3">
                     <div className="font-semibold text-base mb-2">
-                      <a href="/products/screens/screens" className="text-[#e96a32] hover:text-black transition-colors">Diesel Generators</a>
+                      <a href="/products/dieselgenerators/dieselgenerators" className="text-[#e96a32] hover:text-black transition-colors">Diesel Generators</a>
                     </div>
                     <a href="/products/screens/vibratingscreen" className="hover:text-black transition-colors">ISKUA - 250Kva</a>
                     
@@ -186,9 +186,9 @@ export default function Header() {
           <a href="/gallery" className="relative group px-3 py-2 rounded-lg transition-colors duration-300 hover:text-[#e96a32]">
             Gallery
           </a>
-          <a href="/international" className="relative group px-3 py-2 rounded-lg transition-colors duration-300 hover:text-[#e96a32]">
+          {/* <a href="/international" className="relative group px-3 py-2 rounded-lg transition-colors duration-300 hover:text-[#e96a32]">
             International
-          </a>
+          </a> */}
           
           {/* <a href="/news" className="relative group px-3 py-2 rounded-lg transition-colors duration-300 hover:text-[#e96a32]">
             News
