@@ -12,6 +12,7 @@ import CcAvcSeries from "@/components/products/crushers/CcAvcSeries";
 import CcQmSeries from "@/components/products/crushers/CcQmSeries";
 import GyratoryConeCrusher from "@/components/products/crushers/GyratoryConeCrusher";
 import RollCrushers from "@/components/products/crushers/RollCrushers";
+import SandWashingUnit from "@/components/products/crushers/SandWashingUnit";
 
 
 import MobileSeries from "@/components/products/mobileseries/MobileSeries";
@@ -77,6 +78,7 @@ const productsMap: Record<string, React.ComponentType> = {
   ccqmseries: CcQmSeries,
   gyratoryconecrusher: GyratoryConeCrusher,
   rollcrushers: RollCrushers,
+  sandwashingunit: SandWashingUnit,
   
 
   mobileseries: MobileSeries,

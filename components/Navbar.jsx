@@ -98,7 +98,7 @@ export default function Header() {
                     <a href="/products/crushers/rollcrushers" className="hover:text-black transition-colors">Vibrating Screen</a>
                     <a href="/products/crushers/feeders" className="hover:text-black transition-colors">Feeders</a>
                     
-                    <a href="/products/crushers/sandwashingunits" className="hover:text-black transition-colors">Sand Washing Units</a>
+                    <a href="/products/crushers/sandwashingunit" className="hover:text-black transition-colors">Sand Washing Units</a>
                     
                     <a href="/products/mobileseries/mobileseries" className="hover:text-black transition-colors">Track Mounted (Mobile) Crushers</a>
                     <a href="/products/semimobileseries/semimobileseries" className="hover:text-black transition-colors">Trolly Mpunted(Semi Model) Crushers</a>
@@ -153,7 +153,7 @@ export default function Header() {
                     <a href="/products/feeders/feederscreen" className="hover:text-black transition-colors">PD2 GREASE</a>
                     <a href="/products/feeders/panfeeder" className="hover:text-black transition-colors">MP3 Grease Call Purpose </a>
                     
-                      <a href="/products/impactors/impactors" className=" hover:text-black transition-colors">Genrators</a>
+                      <a href="/products/impactors/impactors" className=" hover:text-black transition-colors">Gearoils</a>
                     
                     <a href="/products/impactors/verticalshiftimpactor" className="hover:text-black transition-colors">ADD BLUE</a>
                     {/*<a href="/products/impactors/horizontalshiftimpactor" className="hover:text-black transition-colors">Horizontal Shift Impactor</a>*/}

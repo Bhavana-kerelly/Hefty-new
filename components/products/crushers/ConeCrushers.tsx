@@ -6,11 +6,11 @@ import { CheckCircle } from "lucide-react";
 import ContactSection from '@/components/ContactSection';
 
 
-const industries = [
-    { name: "Cone Crushers (AVC Series)", link: "/products/crushers/ccavcseries" },
-    { name: "Cone Crusher (QM Series)", link: "/products/crushers/ccqmseries" },
-    { name: "GYRATORY CONE CRUSHER", link: "/products/crushers/gyratoryconecrusher" },
-  ];
+// const industries = [
+//     { name: "Cone Crushers (AVC Series)", link: "/products/crushers/ccavcseries" },
+//     { name: "Cone Crusher (QM Series)", link: "/products/crushers/ccqmseries" },
+//     { name: "GYRATORY CONE CRUSHER", link: "/products/crushers/gyratoryconecrusher" },
+//   ];
 
 
 export default function ConeCrusher() {
@@ -20,7 +20,7 @@ export default function ConeCrusher() {
       <section className="py-20 px-6 bg-[#ec6b24] text-white flex flex-col md:flex-row items-center gap-10">
         <div className="w-full md:w-1/2">
           <Image
-            src="/Crushers/CO1.jpg"
+            src="/Crushers/CO1.png"
             alt="AI Chatbot Financing"
             width={800}
             height={500}
@@ -58,7 +58,7 @@ export default function ConeCrusher() {
               </div>
             </section>
       
-      <section className="bg-[#ec6b24] text-white px-8 py-16">
+      <section className="bg-[#dea07e] text-white px-8 py-16">
             <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
               {/* Left Section */}
               <div>
@@ -117,7 +117,7 @@ export default function ConeCrusher() {
             </div>
           </section>
         
-       <section>
+       {/* <section>
         <div className="bg-white text-blue-900 px-6 py-16 mb-15 mt-10">
       <h2 className="text-3xl text-blue-900 hover:text-[#ec6b24] font-bold mb-10">
         Types of Cone Crushers
@@ -136,7 +136,7 @@ export default function ConeCrusher() {
         ))}
       </div>
     </div>
-      </section>
+      </section> */}
      
       
       <ContactSection />
