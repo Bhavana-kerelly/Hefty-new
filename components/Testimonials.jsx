@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState } from "react";
 
 const testimonials = [
@@ -57,8 +56,9 @@ const styles = {
     background: "#fff",
     padding: "30px",
     borderRadius: "8px",
-    flex: "1 1 45%",
-    minWidth: "300px",
+    flex: "1 1 100%",
+    minWidth: "280px",
+    maxWidth: "400px",
     boxShadow: "0 4px 10px rgba(0,0,0,0.08)",
     position: "relative",
     cursor: "pointer",
@@ -111,7 +111,13 @@ export default function Testimonials() {
       >
         Testimonials
       </div>
-      <div style={styles.testimonials}>
+      <div
+        style={{
+          ...styles.testimonials,
+          flexDirection: "row",
+          justifyContent: "center",
+        }}
+      >
         {testimonials.map((item, idx) => (
           <div
             key={idx}

@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -7,14 +8,14 @@ const offices = [
     city: "Hyderabad",
     address: "Hyderabad",
     phone: "+91 73375 00757",
-    map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.186118357271!2d78.42800247504466!3d17.406498083457985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1716302000000!5m2!1sen!2sin"
+    map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.186118357271!2d78.42800247504466!3d17.406498083457985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1716302000000!5m2!1sen!2sin",
   },
-  
 ];
 
 export default function ContactSection() {
   return (
     <div style={styles.container}>
+      {/* Left Form Section */}
       <motion.div
         style={styles.left}
         initial={{ opacity: 0, x: -50 }}
@@ -40,7 +41,7 @@ export default function ContactSection() {
           <label style={styles.label}>Subject *</label>
           <select style={styles.input}>
             <option>--- Select Choice ---</option>
-            <option>Crushers </option>
+            <option>Crushers</option>
             <option>Mobile Series</option>
             <option>Semi Mobile Series</option>
             <option>Feeders</option>
@@ -57,6 +58,7 @@ export default function ContactSection() {
         </form>
       </motion.div>
 
+      {/* Right Offices Section */}
       <motion.div
         style={styles.right}
         initial={{ opacity: 0, x: 50 }}
@@ -69,8 +71,8 @@ export default function ContactSection() {
         </h2>
         <div style={styles.officeList}>
           {offices.map((office, index) => (
-            <motion.div 
-              key={index} 
+            <motion.div
+              key={index}
               style={styles.office}
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
@@ -80,11 +82,11 @@ export default function ContactSection() {
               {office.phone && <p style={styles.officeText}>{office.phone}</p>}
               {office.map && (
                 <div style={styles.mapContainer}>
-                  <iframe 
-                    src={office.map} 
+                  <iframe
+                    src={office.map}
                     style={styles.mapIframe}
-                    allowFullScreen="" 
-                    loading="lazy" 
+                    allowFullScreen=""
+                    loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                   ></iframe>
                 </div>
@@ -100,34 +102,34 @@ export default function ContactSection() {
 const styles = {
   container: {
     display: "flex",
-    flexWrap: "nowrap", // This change forces the sections to stay side-by-side
+    flexWrap: "wrap", // allows stacking on small screens
     backgroundColor: "#ec6b24",
     color: "#fff",
-    padding: "50px 20px",
+    padding: "30px 15px",
     fontFamily: "'Segoe UI', sans-serif",
-    overflowX: "auto", // Adds horizontal scroll on small screens
+    gap: "20px",
   },
   left: {
     flex: "1 1 500px",
+    minWidth: "300px", // shrinks on mobile
     backgroundColor: "#ec6b24",
-    padding: "30px",
+    padding: "20px",
     borderRadius: "10px",
-    margin: "10px",
   },
   right: {
     flex: "1 1 500px",
-    padding: "30px",
-    margin: "10px",
+    minWidth: "300px",
+    padding: "20px",
   },
   title: {
-    fontSize: "32px",
+    fontSize: "24px",
     fontWeight: "700",
-    marginBottom: "20px",
+    marginBottom: "15px",
   },
   titleRight: {
-    fontSize: "32px",
+    fontSize: "24px",
     fontWeight: "700",
-    marginBottom: "30px",
+    marginBottom: "20px",
   },
   gray: {
     color: "white",
@@ -141,7 +143,7 @@ const styles = {
   input: {
     width: "100%",
     padding: "10px",
-    fontSize: "16px",
+    fontSize: "14px",
     marginBottom: "10px",
     borderRadius: "4px",
     border: "1px solid #ccc",
@@ -151,7 +153,7 @@ const styles = {
   textarea: {
     width: "100%",
     padding: "10px",
-    fontSize: "16px",
+    fontSize: "14px",
     borderRadius: "4px",
     border: "1px solid #ccc",
     marginBottom: "15px",
@@ -163,16 +165,17 @@ const styles = {
     backgroundColor: "white",
     color: "#ec6b24",
     border: "none",
-    fontSize: "16px",
+    fontSize: "14px",
     cursor: "pointer",
     borderRadius: "4px",
   },
   flexRow: {
     display: "flex",
+    flexWrap: "wrap", // allow inputs to stack
     gap: "10px",
   },
   flexHalf: {
-    flex: 1,
+    flex: "1 1 200px", // shrinks on mobile
   },
   officeList: {
     display: "flex",
@@ -180,13 +183,13 @@ const styles = {
     gap: "20px",
   },
   office: {
-    flex: "1 1 45%",
-    border: "1px solid white", 
+    flex: "1 1 100%", // stack vertically on small screens
+    border: "1px solid white",
     borderRadius: "8px",
-    padding: "20px",
+    padding: "15px",
   },
   officeCity: {
-    fontSize: "18px",
+    fontSize: "16px",
     fontWeight: "600",
     marginBottom: "5px",
   },
@@ -197,7 +200,7 @@ const styles = {
   mapContainer: {
     marginTop: "15px",
     width: "100%",
-    height: "290px",
+    height: "200px", // smaller map for mobile
   },
   mapIframe: {
     width: "100%",

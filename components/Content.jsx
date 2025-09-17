@@ -7,7 +7,7 @@ export default function SoftwareOutsourcing() {
   const router = useRouter();
 
   const handleClick = (url) => {
-    router.push(url); // Navigate to the original URL
+    router.push(url);
   };
 
   const sections = [
@@ -18,7 +18,6 @@ export default function SoftwareOutsourcing() {
       items: [
         { name: "Jaw Crushers", url: "/products/crushers/jawcrushers" },
         { name: "Cone Crushers", url: "/products/crushers/conecrushers" },
-        // { name: "Roll Crushers", url: "/products/crushers/rollcrushers" },
       ],
     },
     {
@@ -28,8 +27,6 @@ export default function SoftwareOutsourcing() {
       items: [
         { name: "Track Mounted Jaw Crushers", url: "/products/mobileseries/trackmountedjawcrusher" },
         { name: "Track Mounted Cone Crushers", url: "/products/mobileseries/trackmountedconecrusher" },
-        // { name: "Track Mounted Screen", url: "/products/mobileseries/trackmountedscreen" },
-        // { name: "Track Mounted Scalper", url: "/products/mobileseries/trackmountedscalper" },
         { name: "Track Mounted Vertical Shaft Impactor", url: "/products/mobileseries/trackmountedverticalshiftimpactor" },
       ],
     },
@@ -47,30 +44,30 @@ export default function SoftwareOutsourcing() {
   ];
 
   return (
-    <div className="bg-gray-100 py-16 px-8">
+    <div className="bg-gray-100 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto space-y-20">
         {sections.map((section, idx) => (
           <div key={idx} className="flex flex-col items-center text-center">
             {/* Section Title & Description */}
-            <div className="space-y-6">
-              <h2 className="text-5xl text-blue-900 hover:text-[#ec6b24] transition-colors font-bold">
+            <div className="space-y-4 sm:space-y-6">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl text-blue-900 hover:text-[#ec6b24] transition-colors font-bold">
                 {section.title}
               </h2>
-              <p className="text-black text-base leading-relaxed max-w-xl mx-auto">
+              <p className="text-black text-sm sm:text-base md:text-lg leading-relaxed max-w-xl mx-auto">
                 {section.description}
               </p>
             </div>
 
             {/* Section Items */}
-            <div className="flex flex-wrap justify-center gap-12 mt-8">
+            <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-6 sm:gap-12 mt-6 sm:mt-8">
               {section.items.map((item, index) => (
                 <div
                   key={index}
-                  className="flex items-center space-x-3 cursor-pointer"
+                  className="flex items-center space-x-2 sm:space-x-3 cursor-pointer"
                   onClick={() => handleClick(item.url)}
                 >
                   <svg
-                    className="w-5 h-5 text-gray-800"
+                    className="w-4 h-4 sm:w-5 sm:h-5 text-gray-800"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
@@ -78,7 +75,7 @@ export default function SoftwareOutsourcing() {
                   >
                     <polyline points="9,18 15,12 9,6"></polyline>
                   </svg>
-                  <span className="text-lg text-blue-900 hover:text-[#ec6b24] transition-colors">
+                  <span className="text-base sm:text-lg text-blue-900 hover:text-[#ec6b24] transition-colors">
                     {item.name}
                   </span>
                 </div>
@@ -88,7 +85,7 @@ export default function SoftwareOutsourcing() {
             {/* Optional Read More Button */}
             {section.hasButton && (
               <button
-                className="mt-8 px-6 py-3 font-semibold rounded-full bg-black text-white hover:bg-gray-800 transition-colors"
+                className="mt-6 sm:mt-8 px-6 py-3 font-semibold rounded-full bg-black text-white hover:bg-gray-800 transition-colors"
                 onClick={() => handleClick("/products/crushers/crushers")}
               >
                 Read More
@@ -97,7 +94,7 @@ export default function SoftwareOutsourcing() {
 
             {/* Divider */}
             {idx < sections.length - 1 && (
-              <hr className="my-12 border-t border-gray-300 w-full" />
+              <hr className="my-8 sm:my-12 border-t border-gray-300 w-full" />
             )}
           </div>
         ))}

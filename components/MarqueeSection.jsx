@@ -20,11 +20,11 @@ const styles = {
     fontSize: "32px",
     fontWeight: "bold",
     color: "#ffffff",
-    margin: "0 40px",
+    margin: "0 20px", // reduced margin for mobile
   },
   arrow: {
     fontSize: "36px",
-    margin: "0 16px",
+    margin: "0 12px", // reduced arrow spacing for mobile
   },
 };
 
@@ -33,6 +33,18 @@ const keyframes = `
 @keyframes marquee {
   0%   { transform: translateX(0%); }
   100% { transform: translateX(-100%); }
+}
+
+/* Mobile adjustments */
+@media (max-width: 640px) {
+  .marqueeTextBlock {
+    font-size: 24px !important;
+    margin: 0 12px !important;
+  }
+  .marqueeArrow {
+    font-size: 28px !important;
+    margin: 0 8px !important;
+  }
 }
 `;
 
@@ -45,23 +57,23 @@ export default function MarqueeSection() {
       <div style={styles.marqueeWrapper}>
         <div style={styles.marqueeContent}>
           {[...Array(6)].map((_, idx) => (
-            <div key={idx} style={styles.textBlock}>
+            <div key={idx} style={styles.textBlock} className="marqueeTextBlock">
               <span>Crushers</span>
-              <FaArrowRight style={styles.arrow} />
+              <FaArrowRight style={styles.arrow} className="marqueeArrow" />
               <span>Mobile Series</span>
-              <FaArrowRight style={styles.arrow} />
+              <FaArrowRight style={styles.arrow} className="marqueeArrow" />
               <span>Semi Mobile Series</span>
-              <FaArrowRight style={styles.arrow} />
+              <FaArrowRight style={styles.arrow} className="marqueeArrow" />
               <span>Feeders</span>
-              <FaArrowRight style={styles.arrow} />
+              <FaArrowRight style={styles.arrow} className="marqueeArrow" />
               <span>Impactors</span>
-              <FaArrowRight style={styles.arrow} />
+              <FaArrowRight style={styles.arrow} className="marqueeArrow" />
               <span>Screeners</span>
-              <FaArrowRight style={styles.arrow} />
+              <FaArrowRight style={styles.arrow} className="marqueeArrow" />
               <span>Conveyors</span>
-              <FaArrowRight style={styles.arrow} />
+              <FaArrowRight style={styles.arrow} className="marqueeArrow" />
             </div>
-          ))}           
+          ))}
         </div>
       </div>
     </>

@@ -38,45 +38,45 @@ export default function FaqSection() {
   };
 
   return (
-    <section className="py-16 px-6 bg-white flex flex-col items-center gap-12">
+    <section className="py-12 sm:py-16 px-4 sm:px-6 bg-white flex flex-col items-center gap-10 sm:gap-12">
       {/* Full-width Image */}
       <div className="w-full">
         <img
           src="/WhyChoose1.jpg"
           alt="Why Choose Hefty"
-          className="w-full h-[400px] object-cover"
+          className="w-full h-[200px] sm:h-[300px] md:h-[400px] object-cover rounded"
         />
       </div>
 
       {/* FAQ Section */}
       <div className="w-full max-w-3xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-8">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-blue-900 mb-6 sm:mb-8">
           Why Choose Hefty
         </h2>
 
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-3 sm:gap-4">
           {faqs.map((faq, index) => (
             <div
               key={index}
               className={`border-b ${
                 index === activeIndex ? "border-[#ec6b24]" : "border-gray-300"
-              } py-4 cursor-pointer`}
+              } py-3 sm:py-4 cursor-pointer`}
               onClick={() => toggleFAQ(index)}
             >
               <div className="flex justify-between items-center">
                 <p
-                  className={`font-semibold text-lg ${
+                  className={`font-semibold text-base sm:text-lg ${
                     index === activeIndex ? "text-[#ec6b24]" : "text-blue-900"
                   }`}
                 >
                   {faq.question}
                 </p>
-                <span className="text-xl ml-4">
+                <span className="text-lg sm:text-xl ml-3 sm:ml-4">
                   {index === activeIndex ? "−" : "+"}
                 </span>
               </div>
               {index === activeIndex && (
-                <p className="text-gray-600 mt-3 text-sm leading-relaxed">
+                <p className="text-gray-600 mt-2 sm:mt-3 text-sm sm:text-base leading-relaxed">
                   {faq.answer}
                 </p>
               )}
