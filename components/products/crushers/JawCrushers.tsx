@@ -42,24 +42,31 @@ export default function JawCrusher() {
 
       {/* What We Finance */}
       <section className="w-full px-6 py-12 md:py-20 bg-white flex justify-center">
-        <div className="max-w-7xl text-center">
-          
-          <div className="text-gray-700 text-lg space-y-6">
-            <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] leading-tight mb-6">
-             What is a Jaw Crusher?
-            </h2>
-            <p className='text-base text-gray-700'>
-              A Jaw Crusher is a primary crushing machine that reduces large rocks, ores, and minerals into smaller, uniform pieces by applying compressive force. The material is fed into a crushing chamber where two jaws—one fixed and one movable—apply pressure to break it down.
-            </p>
-             <p className="text-base text-gray-700">Hefty Jaw Crushers are trusted across industries for their:</p>
-            <ol className='text-base text-gray-700'>
-              <li>High throughput capacity for faster production</li>
-              <li>Exceptional durability in challenging environments</li>
-              <li>Low operating costs with minimal maintenance requirements</li>
-            </ol>
-          </div>
-        </div>
-      </section>
+  <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+    
+    {/* Left Text Content */}
+    <div className="text-gray-700">
+      <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] leading-tight mb-6">
+        JAW CRUSHER
+      </h2>
+      <p className="text-base mb-4">
+        A Jaw Crusher is a primary crushing machine that reduces large rocks, ores, and minerals into smaller, uniform pieces by applying compressive force. The material is fed into a crushing chamber where two jaws—one fixed and one movable—apply pressure to break it down.
+      </p>
+      
+    </div>
+
+    {/* Right Points Box */}
+    <div className="bg-[#f3f3f3] border border-gray-300 rounded-lg p-6 shadow-md">
+      <ol className="list-decimal list-inside text-base text-gray-700 space-y-3">
+        <li>High throughput capacity for faster production</li>
+        <li>Exceptional durability in challenging environments</li>
+        <li>Low operating costs with minimal maintenance requirements</li>
+      </ol>
+    </div>
+
+  </div>
+</section>
+
 
        <section className="bg-[#ec6b24] text-white px-8 py-16">
             <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">

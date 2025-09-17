@@ -32,7 +32,7 @@ export default function ContactPage() {
       {/* ✅ Responsive Banner Image */}
       <div className="relative w-full h-[200px] sm:h-[300px] md:h-[450px] lg:h-[600px]">
         <Image
-          src="/contact1.jpg"
+          src="/contact1.png"
           alt="Contact Banner"
           fill
           className="object-cover"

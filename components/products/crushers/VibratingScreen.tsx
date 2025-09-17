@@ -17,12 +17,12 @@ export default function RollCrusher() {
   <div className="absolute inset-0 bg-black/50"></div>
 
   {/* Content */}
-  <div className="relative max-w-5xl mx-auto text-center md:text-left space-y-6">
+  <div className="relative max-w-5xl mx-auto text-center md:text-left space-y-6 ">
     <h2 className="text-3xl md:text-4xl font-semibold text-[#ec6b24] leading-tight">
       VIBRATING SCREEN
     </h2>
 
-    <p className="text-base text-gray-200">
+    <p className="text-base text-gray-200 ">
       Hefty Vibrating Screens are a methodical multi-tier screening system suited
       for larger, medium, and fine-sized separation applications. The vibrating
       screen is designed with longer wear life, easy maintenance, and lower noise

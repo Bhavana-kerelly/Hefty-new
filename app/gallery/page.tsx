@@ -16,10 +16,16 @@ const allImages = [
   { id: 8, path: "/gallery/G8.png", label: "Photo 8" },
   { id: 9, path: "/gallery/G9.png", label: "Photo 9" },
   { id: 10, path: "/gallery/G10.png", label: "Photo 10" },
-  { id: 11, path: "/gallery/G11.png", label: "Photo 11" },
-  { id: 12, path: "/gallery/G12.png", label: "Photo 12" },
-  { id: 13, path: "/gallery/G13.png", label: "Photo 13" },
-  { id: 14, path: "/gallery/G14.png", label: "Photo 14" },
+  { id: 11, path: "/gallery/G12.png", label: "Photo 11" },
+  { id: 12, path: "/gallery/G13.png", label: "Photo 12" },
+  { id: 13, path: "/gallery/G14.png", label: "Photo 13" },
+  { id: 14, path: "/gallery/G15.png", label: "Photo 14" },
+  { id: 15, path: "/gallery/G16.png", label: "Photo 9" },
+  { id: 16, path: "/gallery/G17.png", label: "Photo 10" },
+  { id: 17, path: "/gallery/G18.png", label: "Photo 11" },
+  { id: 18, path: "/gallery/G19.png", label: "Photo 12" },
+  { id: 19, path: "/gallery/G20.png", label: "Photo 13" },
+  { id: 20, path: "/gallery/G21.png", label: "Photo 14" },
 ];
 
 export default function GridGallery() {

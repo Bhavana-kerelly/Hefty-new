@@ -53,8 +53,8 @@ export default function Crushers() {
     
     {/* Left: Heading + Description */}
     <div className="md:w-1/2 text-left">
-      <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] leading-tight mb-6">
-        What is a Crusher?
+      <h2 className="text-3xl md:text-4xl font-bold text-blue-900 hover:text-[#ec6b24] leading-tight mb-6">
+        CRUSHER
       </h2>
       <p className="text-base text-gray-700 mb-4">
         A crusher is a machine designed to reduce large rocks, ores, and minerals into smaller, manageable sizes for further processing or direct use in construction. Crushers play a vital role in the production of aggregates, mining operations, and material recycling.

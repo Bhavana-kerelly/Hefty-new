@@ -19,14 +19,14 @@ export default function AIChatbotFinancing() {
     <>
       {/* Hero Section */}
       <section
-  className="relative min-h-[500px] flex items-center justify-center text-white bg-center bg-cover px-6"
+  className="relative min-h-[500px] text-white bg-center bg-cover px-6"
   style={{ backgroundImage: "url('/impactors/VI1.png')" }}
 >
   {/* Overlay for readability */}
   <div className="absolute inset-0 bg-black/50"></div>
 
   {/* Content */}
-  <div className="relative max-w-5xl mx-auto text-center">
+  <div className="relative max-w-5xl mx-auto text-left pt-40 pr-80 pl-1">
     <h2 className="text-3xl font-bold mb-5">
       VERTICAL SHAFT IMPACTOR
     </h2>
@@ -46,23 +46,29 @@ export default function AIChatbotFinancing() {
 
       {/* What We Finance */}
       <section className="w-full px-6 py-12 md:py-20 bg-white flex justify-center">
-        <div className="max-w-7xl items-center">
-          
-          <div className="text-gray-700 text-lg space-y-6">
-            <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] leading-tight mb-6">
-             Key Features
-            </h2>
-            <ol className="text-base text-black mb-6">
-              <li>High-Precision Rotor Design – Ensures uniform particle shape and size.</li>
-<li>Versatile Application – Suitable for sand production, shaping aggregates, and reducing flaky particles.</li>
-<li>Energy Efficient – Optimized for lower power consumption without compromising output.</li>
-<li>Easy Maintenance – Simplified access to wear parts for reduced downtime.</li>
-<li>Durable Build – Engineered with heavy-duty materials for long-lasting performance.</li>
-            </ol>
-          
-        </div>
-        </div>
-      </section>
+  <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    
+    {/* Left Heading */}
+    <div className="text-gray-700 flex items-center justify-center md:justify-start h-full">
+      <h2 className="text-3xl md:text-6xl font-semibold text-blue-900 hover:text-[#ec6b24] leading-tight pl-25">
+        Key Features
+      </h2>
+    </div>
+    
+    {/* Right Points Box */}
+    <div className="bg-gray-200 border border-gray-300 rounded-lg p-6 shadow-md">
+      <ol className="list-decimal list-inside text-base text-black space-y-3">
+        <li>High-Precision Rotor Design – Ensures uniform particle shape and size.</li>
+        <li>Versatile Application – Suitable for sand production, shaping aggregates, and reducing flaky particles.</li>
+        <li>Energy Efficient – Optimized for lower power consumption without compromising output.</li>
+        <li>Easy Maintenance – Simplified access to wear parts for reduced downtime.</li>
+        <li>Durable Build – Engineered with heavy-duty materials for long-lasting performance.</li>
+      </ol>
+    </div>
+
+  </div>
+</section>
+
 
        <section className="bg-[#ec6b24] text-white px-8 py-16">
             <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">

@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 export default function Header() {
   const [openMenu, setOpenMenu] = useState(null);
@@ -96,10 +96,18 @@ export default function Header() {
 
           {/* Social icons */}
           <div className="ml-6 flex gap-3">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-[#e96a32] hover:text-blue-700"><FaFacebookF size={16} /></a>
-            <a href="https://x.com" target="_blank" rel="noopener noreferrer" className="text-[#e96a32] hover:text-blue-700"><FaTwitter size={16} /></a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-[#e96a32] hover:text-blue-700"><FaLinkedinIn size={16} /></a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-[#e96a32] hover:text-blue-700"><FaInstagram size={16} /></a>
+            <a href="https://www.facebook.com/profile.php?id=61578856662236" target="_blank" rel="noopener noreferrer" className="text-[#e96a32] hover:text-blue-700"><FaFacebookF size={16} /></a>
+            <a href="https://x.com/Hefty_hyd " target="_blank" rel="noopener noreferrer" className="text-[#e96a32] hover:text-blue-700"><FaTwitter size={16} /></a>
+            <a href="https://www.linkedin.com/company/108119796" target="_blank" rel="noopener noreferrer" className="text-[#e96a32] hover:text-blue-700"><FaLinkedinIn size={16} /></a>
+            <a href="https://www.instagram.com/hefty_hyd/" target="_blank" rel="noopener noreferrer" className="text-[#e96a32] hover:text-blue-700"><FaInstagram size={16} /></a>
+            <a 
+    href="https://wa.me/7893800757" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="text-[#e96a32] hover:text-blue-900"
+  >
+    <FaWhatsapp size={16} />
+  </a>
           </div>
         </nav>
 

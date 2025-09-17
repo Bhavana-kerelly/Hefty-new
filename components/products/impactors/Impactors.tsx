@@ -19,14 +19,14 @@ export default function Crushers() {
   return (
     <>
       <section
-  className="relative min-h-[500px] flex items-center justify-center text-white bg-center bg-cover px-6"
+  className="relative min-h-[500px] text-white bg-center bg-cover px-6"
   style={{ backgroundImage: "url('/impactors/I1.png')" }}
 >
   {/* Overlay for readability */}
   <div className="absolute inset-0 bg-black/40"></div>
 
   {/* Content */}
-  <div className="relative max-w-3xl text-center">
+  <div className="relative max-w-3xl text-left pt-40">
     <h2 className="text-3xl font-bold mb-5">
       Impactors – Precision Crushing with Hefty
     </h2>
@@ -47,22 +47,27 @@ export default function Crushers() {
 
       
       <section className="w-full px-6 py-12 md:py-20 bg-white flex justify-center">
-        <div className="max-w-7xl text-center">
-          {/* Right Side */}
-          <div className="text-gray-700 text-lg space-y-6">
-            <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] leading-tight mb-6">
-              Why Choose Hefty Impactors?
-            </h2>
-            <ol className="text-base text-black mb-6">
-              <li>High Reduction Ratio – Achieves finer and more uniform material output.</li>
-              <li>Versatility – Suitable for soft to medium-hard materials like limestone, gravel, and recycled concrete.</li>
-              <li>Superior Shaping – Produces cubical aggregates ideal for construction and road building.</li>
-              <li>Heavy-Duty Build – Rugged design ensures long-lasting performance under tough operating conditions.</li>
-              <li>Easy Maintenance – Simplified access for wear part replacement and servicing.</li>
-            </ol>
-          </div>
-        </div>
-      </section>
+  <div className="max-w-7xl w-full text-center">
+    
+    {/* Heading */}
+    <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] leading-tight mb-6">
+      Why Choose Hefty Impactors?
+    </h2>
+    
+    {/* Box for Content */}
+    <div className="bg-[#f3f3f3] border border-gray-300 rounded-lg p-6 shadow-md max-w-3xl mx-auto text-left">
+      <ol className="list-decimal list-inside text-base text-black space-y-3">
+        <li>High Reduction Ratio – Achieves finer and more uniform material output.</li>
+        <li>Versatility – Suitable for soft to medium-hard materials like limestone, gravel, and recycled concrete.</li>
+        <li>Superior Shaping – Produces cubical aggregates ideal for construction and road building.</li>
+        <li>Heavy-Duty Build – Rugged design ensures long-lasting performance under tough operating conditions.</li>
+        <li>Easy Maintenance – Simplified access for wear part replacement and servicing.</li>
+      </ol>
+    </div>
+
+  </div>
+</section>
+
       
      
           <section className="bg-[#ec6b24] text-white px-8 py-16">

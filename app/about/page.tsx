@@ -16,7 +16,7 @@ const AboutUs = () => {
         {/* SECTION 1: Banner Image */}
         <section className="w-full">
           <Image
-            src="/BannerImage.png"
+            src="/BannerImage2.png"
             alt="Office Team"
             width={1920}
             height={700}
