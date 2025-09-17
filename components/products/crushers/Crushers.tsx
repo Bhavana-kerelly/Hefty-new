@@ -19,28 +19,32 @@ const industries = [
 export default function Crushers() {
   return (
     <>
-      <section className="py-20 px-6  bg-[#ec6b24] text-white flex flex-col md:flex-row items-center gap-10">
-        <div className="w-full md:w-1/2">
-          <Image
-            src="/crushers/C1.jpg"
-            alt="Office"
-            width={800}
-            height={500}
-            className="rounded shadow w-full object-cover"
-          />
-        </div>
-        <div className="w-full md:w-1/2">
-          <h2 className="text-3xl font-bold mb-5">
-            Powerful Crushing Solutions for Every Industry
-          </h2>
-          <p className="text-base text-gray-200 mb-6">
-           At Hefty, we design and manufacture high-performance crushers that deliver maximum productivity, reliability, and durability. Whether you’re working in mining, quarrying, construction, or recycling, our range of crushers is built to handle even the toughest materials with ease.
-          </p>
-          <p className="text-base text-gray-200 mb-6">From reducing large rocks to precise aggregate sizes, we provide customized crushing solutions that meet your exact production requirementsAt Hefty, we design and manufacture high-performance crushers that deliver maximum productivity, reliability, and durability. Whether you’re working in mining, quarrying, construction, or recycling, our range of crushers is built to handle even the toughest materials with ease.
-          </p>
-          
-        </div>
-      </section>
+     <section
+  className="relative min-h-[500px] py-20 px-6 text-white bg-center bg-cover"
+  style={{ backgroundImage: "url('/crushers/C1.jpg')" }}
+>
+  {/* Light overlay */}
+  <div className="absolute inset-0 bg-black/40"></div>
+
+  <div className="absolute top-30 left-10 max-w-2xl">
+    <h2 className="text-3xl font-bold mb-5 ">
+      Powerful Crushing Solutions for Every Industry
+    </h2>
+    <p className="text-base text-gray-200 mb-6">
+      At Hefty, we design and manufacture high-performance crushers that deliver
+      maximum productivity, reliability, and durability. Whether you’re working
+      in mining, quarrying, construction, or recycling, our range of crushers is
+      built to handle even the toughest materials with ease.
+    </p>
+    <p className="text-base text-gray-200 mb-6">
+      From reducing large rocks to precise aggregate sizes, we provide customized
+      crushing solutions that meet your exact production requirements. At Hefty,
+      we design and manufacture high-performance crushers that deliver maximum
+      productivity, reliability, and durability.
+    </p>
+  </div>
+</section>
+
       
     <section className="w-full px-6 py-12 md:py-20 bg-white flex justify-center">
       <div className="max-w-3xl text-center">

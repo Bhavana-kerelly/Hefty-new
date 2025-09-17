@@ -19,29 +19,34 @@ export default function AIChatbotFinancing() {
   return (
     <>
       {/* Hero Section */}
-      <section className="py-20 px-6 bg-[#ec6b24] text-white flex flex-col md:flex-row items-center gap-10">
-        <div className="w-full md:w-1/2">
-          <Image
-            src="/impactors/I1.png"
-            alt="AI Chatbot Financing"
-            width={800}
-            height={500}
-            className="rounded shadow w-full object-cover"
-          />
-        </div>
-        <div className="w-full md:w-1/2">
-           <h2 className="text-3xl font-bold mb-5">
-           Horizontal Shaft Impactor (HSI)
-          </h2>
-          <p className="text-base text-gray-200 mb-6">
-         At Hefty, our Horizontal Shaft Impactors are engineered to deliver superior performance in crushing operations. Designed for high reduction ratios and exceptional product shaping, HSIs are ideal for a wide range of materials — from soft limestone to tough basalt.
-          </p>
-          <p className="text-base text-gray-200 mb-6">
-        Built with robust construction and advanced technology, our HSIs ensure consistent product quality while reducing operational downtime. Whether you’re in mining, quarrying, or recycling applications, Hefty’s HSIs combine efficiency, reliability, and versatility to meet your crushing demands.
-          </p>
-          
-        </div>
-      </section>
+      <section
+  className="relative min-h-[500px] flex items-center justify-center text-white bg-center bg-cover px-6"
+  style={{ backgroundImage: "url('/impactors/I1.png')" }}
+>
+  {/* Overlay for readability */}
+  <div className="absolute inset-0 bg-black/50"></div>
+
+  {/* Content */}
+  <div className="relative max-w-5xl mx-auto text-center md:text-left">
+    <h2 className="text-3xl font-bold mb-5">
+      Horizontal Shaft Impactor (HSI)
+    </h2>
+    <p className="text-base text-gray-200 mb-6">
+      At Hefty, our Horizontal Shaft Impactors are engineered to deliver superior
+      performance in crushing operations. Designed for high reduction ratios and
+      exceptional product shaping, HSIs are ideal for a wide range of materials —
+      from soft limestone to tough basalt.
+    </p>
+    <p className="text-base text-gray-200 mb-6">
+      Built with robust construction and advanced technology, our HSIs ensure
+      consistent product quality while reducing operational downtime. Whether
+      you’re in mining, quarrying, or recycling applications, Hefty’s HSIs
+      combine efficiency, reliability, and versatility to meet your crushing
+      demands.
+    </p>
+  </div>
+</section>
+
 
       {/* What We Finance */}
       <section className="w-full px-6 py-12 md:py-20 bg-white flex justify-center">

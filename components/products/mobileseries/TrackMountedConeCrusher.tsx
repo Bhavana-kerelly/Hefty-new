@@ -19,25 +19,29 @@ export default function TrackMountedConeCrusher() {
   return (
     <>
       {/* Hero Section */}
-      <section className="py-20 px-6 bg-[#ec6b24] text-white flex flex-col md:flex-row items-center gap-10">
-        <div className="w-full md:w-1/2">
-          <Image
-            src="/semimobileseries/PC1.png"
-            alt="AI Chatbot Financing"
-            width={800}
-            height={500}
-            className="rounded shadow w-full object-cover"
-          />
-        </div>
-        <div className="w-full md:w-1/2">
-           <h2 className="text-3xl font-bold mb-5">
-           Precision Crushing. Mobile Freedom.
-          </h2>
-          <p className="text-base text-gray-200 mb-6">
-           The Hefty Track Mounted Cone Crusher is built to deliver high-quality secondary and tertiary crushing with the flexibility of full mobility. Designed for demanding applications in mining, quarrying, construction, and recycling, it offers superior particle shaping, adjustable output sizes, and consistent performance—anywhere your project takes you.
-          </p>
-        </div>
-      </section>
+      <section
+  className="relative min-h-[500px] flex items-center justify-center text-white bg-center bg-cover px-6"
+  style={{ backgroundImage: "url('/semimobileseries/PC1.png')" }}
+>
+  {/* Overlay for readability */}
+  <div className="absolute inset-0 bg-black/50"></div>
+
+  {/* Content */}
+  <div className="relative max-w-5xl mx-auto text-center md:text-left space-y-6">
+    <h2 className="text-3xl md:text-4xl font-bold">
+      Precision Crushing. Mobile Freedom.
+    </h2>
+
+    <p className="text-base text-gray-200">
+      The Hefty Track Mounted Cone Crusher is built to deliver high-quality
+      secondary and tertiary crushing with the flexibility of full mobility.
+      Designed for demanding applications in mining, quarrying, construction,
+      and recycling, it offers superior particle shaping, adjustable output
+      sizes, and consistent performance—anywhere your project takes you.
+    </p>
+  </div>
+</section>
+
 
       {/* What We Finance */}
       <section className="w-full px-6 py-12 md:py-20 bg-white">

@@ -20,28 +20,34 @@ const industries = [
 export default function Crushers() {
   return (
     <>
-      <section className="py-20 px-6  bg-[#ec6b24] text-white flex flex-col md:flex-row items-center gap-10">
-        <div className="w-full md:w-1/2">
-          <Image
-            src="/feeders/F1.jpg"
-            alt="Office"
-            width={800}
-            height={500}
-            className="rounded shadow w-full object-cover"
-          />
-        </div>
-        <div className="w-full md:w-1/2">
-          <h2 className="text-3xl font-bold mb-5">
-           Reliable Material Handling for Every Operation
-          </h2>
-          <p className="text-base text-gray-200 mb-6">
-           At Hefty, we design and manufacture feeders that deliver a steady, controlled flow of material to crushers, screens, and conveyors — ensuring maximum efficiency and consistent output. Built to handle a wide range of materials and capacities, our feeders combine strength, precision, and durability for the toughest mining, quarrying, and aggregate applications.
-          </p>
-          <p className="text-base text-gray-200 mb-6">Whether you need to handle fine particles, large boulders, or everything in between, Hefty Feeders are engineered to deliver unmatched performance in material processing.
-          </p>
-          
-        </div>
-      </section>
+      <section
+  className="relative min-h-[500px] flex items-center justify-center text-white bg-center bg-cover px-6"
+  style={{ backgroundImage: "url('/feeders/F1.jpg')" }}
+>
+  {/* Overlay for readability */}
+  <div className="absolute inset-0 bg-black/50"></div>
+
+  {/* Content */}
+  <div className="relative max-w-5xl mx-auto text-center md:text-left space-y-6">
+    <h2 className="text-3xl md:text-4xl font-bold">
+      Reliable Material Handling for Every Operation
+    </h2>
+
+    <p className="text-base text-gray-200">
+      At Hefty, we design and manufacture feeders that deliver a steady,
+      controlled flow of material to crushers, screens, and conveyors — ensuring
+      maximum efficiency and consistent output. Built to handle a wide range of
+      materials and capacities, our feeders combine strength, precision, and
+      durability for the toughest mining, quarrying, and aggregate applications.
+    </p>
+
+    <p className="text-base text-gray-200">
+      Whether you need to handle fine particles, large boulders, or everything
+      in between, Hefty Feeders are engineered to deliver unmatched performance
+      in material processing.
+    </p>
+  </div>
+</section>
       
       <section className="w-full px-6 py-12 md:py-20 bg-white flex justify-center">
         <div className="max-w-7xl text-center">

@@ -20,28 +20,35 @@ const industries = [
 export default function Crushers() {
   return (
     <>
-      <section className="py-20 px-6  bg-[#ec6b24] text-white flex flex-col md:flex-row items-center gap-10">
-        <div className="w-full md:w-1/2">
-          <Image
-            src="/semimobileseries/SM1.png"
-            alt="Office"
-            width={800}
-            height={500}
-            className="rounded shadow w-full object-cover"
-          />
-        </div>
-        <div className="w-full md:w-1/2">
-          <h2 className="text-3xl font-bold mb-5">
-           SEMI MOBILE SERIES
-          </h2>
-          <p className="text-base text-gray-200 mb-6">
-           The HEFTY Semi Mobile Series is designed for operations that demand the flexibility of mobility without compromising the robustness of stationary crushing plants. These units are engineered to be easily transportable while offering exceptional productivity, making them ideal for short- to medium-term projects, mining sites, and aggregate production facilities.
-          </p>
-          <p className="text-base text-gray-200 mb-6">Built with modular structures, the Semi Mobile Series combines quick setup times with heavy-duty performance, ensuring smooth operations in diverse and challenging environments.
-          </p>
-          
-        </div>
-      </section>
+      <section
+  className="relative min-h-[500px] flex items-center justify-center text-white bg-center bg-cover px-6"
+  style={{ backgroundImage: "url('/semimobileseries/SM1.png')" }}
+>
+  {/* Overlay for readability */}
+  <div className="absolute inset-0 bg-black/50"></div>
+
+  {/* Content */}
+  <div className="relative max-w-5xl mx-auto text-center md:text-left space-y-6">
+    <h2 className="text-3xl md:text-4xl font-bold">
+      SEMI MOBILE SERIES
+    </h2>
+
+    <p className="text-base text-gray-200">
+      The HEFTY Semi Mobile Series is designed for operations that demand the
+      flexibility of mobility without compromising the robustness of stationary
+      crushing plants. These units are engineered to be easily transportable
+      while offering exceptional productivity, making them ideal for short- to
+      medium-term projects, mining sites, and aggregate production facilities.
+    </p>
+
+    <p className="text-base text-gray-200">
+      Built with modular structures, the Semi Mobile Series combines quick setup
+      times with heavy-duty performance, ensuring smooth operations in diverse
+      and challenging environments.
+    </p>
+  </div>
+</section>
+
       
       <section className="w-full px-6 py-12 md:py-20 bg-white flex justify-center">
         <div className="max-w-7xl text-center">

@@ -17,26 +17,28 @@ export default function AIChatbotFinancing() {
   return (
     <>
       {/* Hero Section */}
-      <section className="py-20 px-6 bg-[#ec6b24] text-white flex flex-col md:flex-row items-center gap-10">
-        <div className="w-full md:w-1/2">
-          <Image
-            src="/semimobileseries/PJ1.png"
-            alt="AI Chatbot Financing"
-            width={800}
-            height={500}
-            className="rounded shadow w-full object-cover"
-          />
-        </div>
-        <div className="w-full md:w-1/2">
-           <h2 className="text-3xl font-bold mb-5">
-           PROFAST JAW
-          </h2>
-          <p className="text-base text-gray-200 mb-6">
-           The Profast Jaw Crusher is engineered for rapid deployment, high mobility, and unmatched efficiency. Built for both primary and secondary crushing applications, it combines speed, strength, and smart engineering to deliver superior performance in even the most demanding environments.
-          </p>
-         
-        </div>
-      </section>
+      <section
+  className="relative min-h-[500px] flex items-center justify-center text-white bg-center bg-cover px-6"
+  style={{ backgroundImage: "url('/semimobileseries/PJ1.png')" }}
+>
+  {/* Overlay for readability */}
+  <div className="absolute inset-0 bg-black/50"></div>
+
+  {/* Content */}
+  <div className="relative max-w-5xl mx-auto text-center md:text-left space-y-6">
+    <h2 className="text-3xl md:text-4xl font-bold">
+      PROFAST JAW
+    </h2>
+
+    <p className="text-base text-gray-200">
+      The Profast Jaw Crusher is engineered for rapid deployment, high mobility,
+      and unmatched efficiency. Built for both primary and secondary crushing
+      applications, it combines speed, strength, and smart engineering to deliver
+      superior performance in even the most demanding environments.
+    </p>
+  </div>
+</section>
+
 
       {/* What We Finance */}
       <section className="w-full px-6 py-12 md:py-20 bg-white flex justify-center">

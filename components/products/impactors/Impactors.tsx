@@ -18,28 +18,33 @@ const industries = [
 export default function Crushers() {
   return (
     <>
-      <section className="py-20 px-6  bg-[#ec6b24] text-white flex flex-col md:flex-row items-center gap-10">
-        <div className="w-full md:w-1/2">
-          <Image
-            src="/impactors/I1.png"
-            alt="Office"
-            width={800}
-            height={500}
-            className="rounded shadow w-full object-cover"
-          />
-        </div>
-        <div className="w-full md:w-1/2">
-          <h2 className="text-3xl font-bold mb-5">
-           Impactors – Precision Crushing with Hefty
-          </h2>
-          <p className="text-base text-gray-200 mb-6">
-           At Hefty, our Impactors are engineered for unmatched performance in producing high-quality aggregates and processing a wide range of materials. Designed with advanced technology and robust construction, they deliver superior reduction ratios, exceptional shaping capabilities, and consistent output for demanding applications.
-          </p>
-          <p className="text-base text-gray-200 mb-6">Whether it’s mining, quarrying, recycling, or infrastructure development, our impactors are built to handle it all—turning raw material into premium products efficiently and reliably.
-          </p>
-          
-        </div>
-      </section>
+      <section
+  className="relative min-h-[500px] flex items-center justify-center text-white bg-center bg-cover px-6"
+  style={{ backgroundImage: "url('/impactors/I1.png')" }}
+>
+  {/* Overlay for readability */}
+  <div className="absolute inset-0 bg-black/40"></div>
+
+  {/* Content */}
+  <div className="relative max-w-3xl text-center">
+    <h2 className="text-3xl font-bold mb-5">
+      Impactors – Precision Crushing with Hefty
+    </h2>
+    <p className="text-base text-gray-200 mb-6">
+      At Hefty, our Impactors are engineered for unmatched performance in
+      producing high-quality aggregates and processing a wide range of
+      materials. Designed with advanced technology and robust construction,
+      they deliver superior reduction ratios, exceptional shaping capabilities,
+      and consistent output for demanding applications.
+    </p>
+    <p className="text-base text-gray-200 mb-6">
+      Whether it’s mining, quarrying, recycling, or infrastructure development,
+      our impactors are built to handle it all—turning raw material into
+      premium products efficiently and reliably.
+    </p>
+  </div>
+</section>
+
       
       <section className="w-full px-6 py-12 md:py-20 bg-white flex justify-center">
         <div className="max-w-7xl text-center">

@@ -18,26 +18,29 @@ export default function AIChatbotFinancing() {
   return (
     <>
       {/* Hero Section */}
-      <section className="py-20 px-6 bg-[#ec6b24] text-white flex flex-col md:flex-row items-center gap-10">
-        <div className="w-full md:w-1/2">
-          <Image
-            src="/feeders/P1.png"
-            alt="AI Chatbot Financing"
-            width={800}
-            height={500}
-            className="rounded shadow w-full object-cover"
-          />
-        </div>
-        <div className="w-full md:w-1/2">
-           <h2 className="text-3xl font-bold mb-5">
-          Precision Feeding for Consistent Performance
-          </h2>
-          <p className="text-base text-gray-200 mb-6">
-          At Hefty, our Pan Feeders are engineered to deliver controlled and consistent material flow for a variety of applications — from mining and aggregates to recycling and industrial processes. Designed with durability, efficiency, and ease of maintenance in mind, these feeders ensure your plant runs smoothly, day after day.
-          </p>
-          
-        </div>
-      </section>
+      <section
+  className="relative min-h-[500px] flex items-center justify-center text-white bg-center bg-cover px-6"
+  style={{ backgroundImage: "url('/feeders/P1.png')" }}
+>
+  {/* Overlay for readability */}
+  <div className="absolute inset-0 bg-black/50"></div>
+
+  {/* Content */}
+  <div className="relative max-w-5xl mx-auto text-center md:text-left space-y-6">
+    <h2 className="text-3xl md:text-4xl font-bold">
+      Precision Feeding for Consistent Performance
+    </h2>
+
+    <p className="text-base text-gray-200">
+      At Hefty, our Pan Feeders are engineered to deliver controlled and
+      consistent material flow for a variety of applications — from mining and
+      aggregates to recycling and industrial processes. Designed with durability,
+      efficiency, and ease of maintenance in mind, these feeders ensure your plant
+      runs smoothly, day after day.
+    </p>
+  </div>
+</section>
+
 
       {/* What We Finance */}
       <section className="w-full px-6 py-12 md:py-20 bg-white flex justify-center">

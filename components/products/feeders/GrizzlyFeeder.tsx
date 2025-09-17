@@ -19,26 +19,30 @@ export default function AIChatbotFinancing() {
   return (
     <>
       {/* Hero Section */}
-      <section className="py-20 px-6 bg-[#ec6b24] text-white flex flex-col md:flex-row items-center gap-10">
-        <div className="w-full md:w-1/2">
-          <Image
-            src="/feeders/G1.png"
-            alt="AI Chatbot Financing"
-            width={800}
-            height={500}
-            className="rounded shadow w-full object-cover"
-          />
-        </div>
-        <div className="w-full md:w-1/2">
-           <h2 className="text-3xl font-bold mb-5">
-           Built for Unmatched Durability & Precision Feeding
-          </h2>
-          <p className="text-base text-gray-200 mb-6">
-          When it comes to handling the toughest materials in mining, quarrying, and recycling operations, Hefty Grizzly Feeders stand as the industry benchmark. Engineered for high-capacity feeding, effective scalping, and exceptional wear resistance, these feeders ensure your downstream crushers and screens receive a steady, controlled flow of material — maximizing productivity and minimizing downtime.
-          </p>
-          
-        </div>
-      </section>
+      <section
+  className="relative min-h-[500px] flex items-center justify-center text-white bg-center bg-cover px-6"
+  style={{ backgroundImage: "url('/feeders/G1.png')" }}
+>
+  {/* Overlay for readability */}
+  <div className="absolute inset-0 bg-black/50"></div>
+
+  {/* Content */}
+  <div className="relative max-w-5xl mx-auto text-center md:text-left space-y-6">
+    <h2 className="text-3xl md:text-4xl font-bold">
+      Built for Unmatched Durability & Precision Feeding
+    </h2>
+
+    <p className="text-base text-gray-200">
+      When it comes to handling the toughest materials in mining, quarrying, and
+      recycling operations, Hefty Grizzly Feeders stand as the industry benchmark.
+      Engineered for high-capacity feeding, effective scalping, and exceptional
+      wear resistance, these feeders ensure your downstream crushers and screens
+      receive a steady, controlled flow of material — maximizing productivity and
+      minimizing downtime.
+    </p>
+  </div>
+</section>
+
 
       {/* What We Finance */}
       <section className="w-full px-6 py-12 md:py-20 bg-white flex justify-center">
