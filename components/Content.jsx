@@ -18,7 +18,7 @@ export default function SoftwareOutsourcing() {
       items: [
         { name: "Jaw Crushers", url: "/products/crushers/jawcrushers" },
         { name: "Cone Crushers", url: "/products/crushers/conecrushers" },
-        { name: "Roll Crushers", url: "/products/crushers/rollcrushers" },
+        // { name: "Roll Crushers", url: "/products/crushers/rollcrushers" },
       ],
     },
     {
@@ -28,9 +28,9 @@ export default function SoftwareOutsourcing() {
       items: [
         { name: "Track Mounted Jaw Crushers", url: "/products/mobileseries/trackmountedjawcrusher" },
         { name: "Track Mounted Cone Crushers", url: "/products/mobileseries/trackmountedconecrusher" },
-        { name: "Track Mounted Screen", url: "/products/mobileseries/trackmountedscreen" },
-        { name: "Track Mounted Scalper", url: "/products/mobileseries/trackmountedscalper" },
-        { name: "Track Mounted Vertical Shift Impactor", url: "/products/mobileseries/trackmountedverticalshiftimpactor" },
+        // { name: "Track Mounted Screen", url: "/products/mobileseries/trackmountedscreen" },
+        // { name: "Track Mounted Scalper", url: "/products/mobileseries/trackmountedscalper" },
+        { name: "Track Mounted Vertical Shaft Impactor", url: "/products/mobileseries/trackmountedverticalshiftimpactor" },
       ],
     },
     {
@@ -38,9 +38,9 @@ export default function SoftwareOutsourcing() {
       description:
         "The HEFTY Semi Mobile Series delivers the strength of stationary crushers with the flexibility to move when you need it. Ideal for short- to mid-term operations, it’s built for rapid setup, reliable output, and rugged performance anywhere.",
       items: [
-        { name: "Pro Fast Jaw", url: "/products/semimobileseries/profastjaw" },
-        { name: "Pro Fast Cone", url: "/products/semimobileseries/profastcone" },
-        { name: "Pro Fast Vertical Shift Impactor", url: "/products/semimobileseries/profastverticalshiftimpactor" },
+        { name: "Semi Mobile Jaw", url: "/products/semimobileseries/profastjaw" },
+        { name: "Semi Mobile Cone", url: "/products/semimobileseries/profastcone" },
+        { name: "Semi Mobile Vertical Shaft Impactor", url: "/products/semimobileseries/profastverticalshiftimpactor" },
       ],
       hasButton: true,
     },

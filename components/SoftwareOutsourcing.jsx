@@ -75,7 +75,7 @@ export default function SoftwareOutsourcing() {
           </div>
           
           {/* Statistics section with all numbers in a single row */}
-          <div className="flex flex-nowrap justify-between items-center mt-12 divide-x divide-gray-500">
+          <div className="flex flex-nowrap justify-between items-center mt-12 divide-x divide-gray-500 bg-blue-900">
             
             {/* Statistic 1 */}
             <div ref={modelsRef} className="text-center px-8 py-2">
