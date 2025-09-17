@@ -9,28 +9,38 @@ import Footer from "@/components/Footer";
 const blogs = [
   {
     slug: "redefining-excellence",
-    title: "Hefty Machines – Redefining Crushing, Screening, and Washing Excellence",
-    summary: "In the world of construction, mining, and infrastructure development, the demand for efficiency, durability, and precision has never been higher. This is where Hefty Machines sets the benchmark.",
+    title:
+      "Hefty Machines – Redefining Crushing, Screening, and Washing Excellence",
+    summary:
+      "In the world of construction, mining, and infrastructure development, the demand for efficiency, durability, and precision has never been higher. This is where Hefty Machines sets the benchmark.",
   },
   {
     slug: "perfect-aggregates",
-    title: "The Science of Perfect Aggregates – How Hefty Machines Deliver Unmatched Quality",
-    summary: "In construction, the quality of aggregates can make or break a project. Poorly shaped or contaminated aggregates can compromise strength, durability, and safety. Hefty has mastered the art and science of aggregate production.",
+    title:
+      "The Science of Perfect Aggregates – How Hefty Machines Deliver Unmatched Quality",
+    summary:
+      "In construction, the quality of aggregates can make or break a project. Poorly shaped or contaminated aggregates can compromise strength, durability, and safety. Hefty has mastered the art and science of aggregate production.",
   },
   {
     slug: "mobility-advantage",
-    title: "Why Mobility is the Future of Crushing Equipment – The Hefty Advantage",
-    summary: "In the fast-paced world of infrastructure, mining, and construction, time is more than money. Traditional fixed crushing plants demand high setup costs and limited flexibility. Hefty’s mobile equipment changes the game.",
+    title:
+      "Why Mobility is the Future of Crushing Equipment – The Hefty Advantage",
+    summary:
+      "In the fast-paced world of infrastructure, mining, and construction, time is more than money. Traditional fixed crushing plants demand high setup costs and limited flexibility. Hefty’s mobile equipment changes the game.",
   },
   {
     slug: "safety-sustainability",
-    title: "Safety and Sustainability – How Hefty Leads in Responsible Machinery Design",
-    summary: "Success in today’s construction and mining industries is no longer measured by productivity alone. Hefty designs equipment that prioritizes operator safety and environmental responsibility.",
+    title:
+      "Safety and Sustainability – How Hefty Leads in Responsible Machinery Design",
+    summary:
+      "Success in today’s construction and mining industries is no longer measured by productivity alone. Hefty designs equipment that prioritizes operator safety and environmental responsibility.",
   },
   {
     slug: "quarry-to-construction",
-    title: "From Quarry to Construction – How Hefty Powers the Entire Material Processing Cycle",
-    summary: "Every successful construction project begins in the quarry. Hefty Machines is a complete solutions provider, offering equipment that covers every stage of the journey from quarry to construction site.",
+    title:
+      "From Quarry to Construction – How Hefty Powers the Entire Material Processing Cycle",
+    summary:
+      "Every successful construction project begins in the quarry. Hefty Machines is a complete solutions provider, offering equipment that covers every stage of the journey from quarry to construction site.",
   },
 ];
 
@@ -39,20 +49,21 @@ export default function BlogsPage() {
     <>
       <Navbar />
 
-      {/* Banner Image */}
-      <div className="relative w-[1280px] h-[700px]">
+      {/* ✅ Responsive Banner Image */}
+      <div className="relative w-full h-[250px] sm:h-[400px] md:h-[500px] lg:h-[700px]">
         <Image
           src="/blog1.png" // Replace with your banner image path
           alt="Blog Banner"
           fill
+          priority
           className="object-cover"
         />
-        
       </div>
 
-      <div className="min-h-screen bg-gray-100 text-black py-16">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="min-h-screen bg-gray-100 text-black py-10 sm:py-16">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          {/* ✅ Grid adjusts based on screen */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
             {blogs.map((blog, index) => (
               <motion.div
                 key={blog.slug}
@@ -62,12 +73,12 @@ export default function BlogsPage() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 whileHover={{ scale: 1.05 }}
               >
-                <div className="p-6 flex flex-col h-full">
+                <div className="p-4 sm:p-6 flex flex-col h-full">
                   <Link href={`/blogs/${blog.slug}`}>
-                    <h2 className="text-2xl font-semibold mb-3 text-white group-hover:text-[#ec6b24] transition-colors duration-300">
+                    <h2 className="text-xl sm:text-2xl font-semibold mb-3 text-white group-hover:text-[#ec6b24] transition-colors duration-300">
                       {blog.title}
                     </h2>
-                    <p className="text-gray-300 mb-6 group-hover:text-gray-200 transition-colors duration-300">
+                    <p className="text-sm sm:text-base text-gray-300 mb-6 group-hover:text-gray-200 transition-colors duration-300">
                       {blog.summary}
                     </p>
                     <span className="mt-auto inline-block text-[#ec6b24] group-hover:translate-x-1 transition-transform duration-300">

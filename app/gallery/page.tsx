@@ -20,8 +20,6 @@ const allImages = [
   { id: 12, path: "/gallery/G12.png", label: "Photo 12" },
   { id: 13, path: "/gallery/G13.png", label: "Photo 13" },
   { id: 14, path: "/gallery/G14.png", label: "Photo 14" },
-
-  // ...more images
 ];
 
 export default function GridGallery() {
@@ -34,13 +32,13 @@ export default function GridGallery() {
   return (
     <>
       <Navbar />
-      <section className="min-h-screen bg-gray-50 py-16 px-6 flex flex-col items-center">
-        <h1 className="font-serif text-4xl md:text-5xl font-bold text-blue-900 hover:text-[#ec6b24] mb-12 text-center">
+      <section className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 flex flex-col items-center">
+        <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-blue-900 hover:text-[#ec6b24] mb-10 sm:mb-12 text-center">
           Image Gallery
         </h1>
 
-        {/* Grid with rectangular images, 2 per row */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-6xl">
+        {/* ✅ Grid with rectangular images, responsive */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 w-full max-w-6xl">
           {allImages.slice(0, visibleCount).map((img) => (
             <div
               key={img.id}
@@ -49,9 +47,9 @@ export default function GridGallery() {
               <Image
                 src={img.path}
                 alt={img.label}
-                width={600}       // rectangle width
-                height={400}      // rectangle height
-                className="w-full h-[400px] object-cover"
+                width={600}
+                height={400}
+                className="w-full h-[220px] sm:h-[300px] md:h-[350px] lg:h-[400px] object-cover"
               />
             </div>
           ))}
@@ -59,10 +57,10 @@ export default function GridGallery() {
 
         {/* Load More Button */}
         {visibleCount < allImages.length && (
-          <div className="w-full flex justify-center mt-10">
+          <div className="w-full flex justify-center mt-8 sm:mt-10">
             <button
               onClick={handleLoadMore}
-              className="px-6 py-3 bg-white text-blue-900 font-semibold rounded-lg shadow-md hover:bg-[#ec6b24] transition"
+              className="px-5 sm:px-6 py-2 sm:py-3 bg-white text-blue-900 font-semibold rounded-lg shadow-md hover:bg-[#ec6b24] transition"
             >
               Load More
             </button>

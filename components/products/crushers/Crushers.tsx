@@ -20,13 +20,14 @@ export default function Crushers() {
   return (
     <>
      <section
-  className="relative min-h-[500px] py-20 px-6 text-white bg-center bg-cover"
-  style={{ backgroundImage: "url('/crushers/C1.jpg')" }}
+  className="relative min-h-[500px] h-[700px] w-full py-20 px-6 text-white bg-center bg-cover flex items-center justify-center"
+  style={{ backgroundImage: "url('/crushers/C1.png')" }}
 >
   {/* Light overlay */}
   <div className="absolute inset-0 bg-black/40"></div>
 
-  <div className="absolute top-30 left-10 max-w-2xl">
+  {/* Centered content */}
+  <div className="relative max-w-2xl text-center z-10 w-120 pl-10">
     <h2 className="text-3xl font-bold mb-5 ">
       Powerful Crushing Solutions for Every Industry
     </h2>
@@ -45,26 +46,37 @@ export default function Crushers() {
   </div>
 </section>
 
+
       
     <section className="w-full px-6 py-12 md:py-20 bg-white flex justify-center">
-      <div className="max-w-3xl text-center">
-        <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] leading-tight mb-6">
-         What is a Crusher?
-        </h2>
-           <p className="text-base text-gray-700 mb-4">
-          A crusher is a machine designed to reduce large rocks, ores, and minerals into smaller, manageable sizes for further processing or direct use in construction. Crushers play a vital role in the production of aggregates, mining operations, and material recycling.
-          </p>
-        <p className="text-base text-gray-700 mb-4">
-          At Hefty, our crushers are engineered to deliver:
-        </p>
-        <ul className="text-base text-gray-700 list-disc list-inside space-y-2">
-          <li>High throughput for faster operations</li>
-          <li>Robust performance in demanding environments</li>
-          <li>Easy maintenance for reduced downtime</li>
-          <li>Energy-efficient designs for cost savings</li>
-        </ul>
-      </div>
-   </section>
+  <div className="max-w-6xl flex flex-col md:flex-row items-start gap-10">
+    
+    {/* Left: Heading + Description */}
+    <div className="md:w-1/2 text-left">
+      <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] leading-tight mb-6">
+        What is a Crusher?
+      </h2>
+      <p className="text-base text-gray-700 mb-4">
+        A crusher is a machine designed to reduce large rocks, ores, and minerals into smaller, manageable sizes for further processing or direct use in construction. Crushers play a vital role in the production of aggregates, mining operations, and material recycling.
+      </p>
+      {/* <p className="text-base text-gray-700 mb-4">
+        At Hefty, our crushers are engineered to deliver:
+      </p> */}
+    </div>
+
+    {/* Right: Points in a box */}
+    <div className="md:w-1/2 bg-blue-50 border border-blue-200 rounded-lg p-6 shadow-md">
+      <ul className="list-disc list-inside space-y-3 text-gray-700 text-base">
+        <li>High throughput for faster operations</li>
+        <li>Robust performance in demanding environments</li>
+        <li>Easy maintenance for reduced downtime</li>
+        <li>Energy-efficient designs for cost savings</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
 
       
      
@@ -133,13 +145,13 @@ export default function Crushers() {
 
     
      <section>
-  <div className="bg-white text-blue-900 px-6 py-16 mb-15 mt-10">
-    <div className="max-w-5xl mx-auto text-center">
+  <div className="bg-white text-blue-900 px-6 py-16 mt-10 mb-15">
+    <div className="max-w-3xl mx-auto text-center">
       <h2 className="text-3xl text-blue-900 hover:text-[#ec6b24] font-bold mb-10">
         CRUSHERS
       </h2>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 justify-center">
+      <div className="grid grid-cols-2 gap-4 justify-center">
         {industries.map((item, index) => (
           <a
             key={index}
@@ -153,6 +165,7 @@ export default function Crushers() {
     </div>
   </div>
 </section>
+
 
     
     <ContactSection />
