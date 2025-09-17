@@ -42,7 +42,7 @@ export default function FaqSection() {
       {/* Full-width Image */}
       <div className="w-full">
         <img
-          src="/WhyChoose1.jpg"
+          src="/WhyChoose.png"
           alt="Why Choose Hefty"
           className="w-full h-[200px] sm:h-[300px] md:h-[400px] object-cover rounded"
         />

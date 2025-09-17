@@ -52,7 +52,7 @@ export default function BlogsPage() {
       {/* ✅ Responsive Banner Image */}
       <div className="relative w-full h-[250px] sm:h-[400px] md:h-[500px] lg:h-[700px]">
         <Image
-          src="/blog1.png" // Replace with your banner image path
+          src="/blog.png" // Replace with your banner image path
           alt="Blog Banner"
           fill
           priority

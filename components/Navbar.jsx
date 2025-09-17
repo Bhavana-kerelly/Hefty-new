@@ -105,7 +105,7 @@ export default function Header() {
 
         {/* Mobile Hamburger */}
         <div className="md:hidden">
-          <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="text-2xl focus:outline-none">
+          <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="text-2xl text-black focus:outline-none">
             {mobileMenuOpen ? "✕" : "☰"}
           </button>
         </div>

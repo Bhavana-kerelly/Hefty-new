@@ -27,7 +27,7 @@ export default function AboutSection() {
       {/* Image Block */}
       <div className="w-full max-w-7xl">
         <img
-          src="/About1.jpg"
+          src="/About.png"
           alt="Office"
           className="w-full h-64 sm:h-80 md:h-96 lg:h-[400px] object-cover rounded shadow"
         />
