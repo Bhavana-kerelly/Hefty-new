@@ -21,14 +21,14 @@ export default function Crushers() {
   return (
     <>
       <section
-  className="relative min-h-[500px] flex items-center justify-center text-white bg-center bg-cover px-6"
+  className="relative min-h-[500px] flex items-center justify-end text-white bg-center bg-cover px-6"
   style={{ backgroundImage: "url('/feeders/F1.jpg')" }}
 >
   {/* Overlay for readability */}
   <div className="absolute inset-0 bg-black/50"></div>
 
   {/* Content */}
-  <div className="relative max-w-5xl mx-auto text-center md:text-left space-y-6">
+  <div className="relative max-w-5xl mx-auto text-left pr-100 md:text-left">
     <h2 className="text-3xl md:text-4xl font-bold">
       Reliable Material Handling for Every Operation
     </h2>
@@ -48,21 +48,31 @@ export default function Crushers() {
     </p>
   </div>
 </section>
+
       
       <section className="w-full px-6 py-12 md:py-20 bg-white flex justify-center">
-        <div className="max-w-7xl text-center">
-          
+  <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    
+    {/* Left Side - Heading */}
+    <div>
+      <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] leading-tight text-center">
+        FEEDERS
+      </h2>
+    </div>
 
-          {/* Right Side */}
-          <div className="text-gray-700 text-lg space-y-6">
-            <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] leading-tight mb-6">
-              What Are Feeders?
-            </h2>
-            <p className="text-base text-black mb-6">A feeder is a machine that receives bulk material from a dump hopper, truck, or loader and delivers it at a regulated rate to the next stage of processing. Feeders are crucial for smooth operation, reducing downtime, and improving overall efficiency.
-          </p>
-          </div>
-        </div>
-      </section>
+    {/* Right Side - Content Box */}
+    <div className="bg-gray-100 shadow-md rounded-xl p-6 text-gray-700">
+      <p className="text-base text-black">
+        A feeder is a machine that receives bulk material from a dump hopper,
+        truck, or loader and delivers it at a regulated rate to the next stage
+        of processing. Feeders are crucial for smooth operation, reducing
+        downtime, and improving overall efficiency.
+      </p>
+    </div>
+
+  </div>
+</section>
+
       
      
           <section className="bg-[#ec6b24] text-white px-8 py-16">

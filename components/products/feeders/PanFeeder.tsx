@@ -19,14 +19,14 @@ export default function AIChatbotFinancing() {
     <>
       {/* Hero Section */}
       <section
-  className="relative min-h-[500px] flex items-center justify-center text-white bg-center bg-cover px-6"
+  className="relative min-h-[500px] flex items-center justify-start text-white bg-center bg-cover px-6"
   style={{ backgroundImage: "url('/feeders/P1.png')" }}
 >
   {/* Overlay for readability */}
   <div className="absolute inset-0 bg-black/50"></div>
 
   {/* Content */}
-  <div className="relative max-w-5xl mx-auto text-center md:text-left space-y-6">
+  <div className="relative max-w-3xl text-left space-y-6">
     <h2 className="text-3xl md:text-4xl font-bold">
       Precision Feeding for Consistent Performance
     </h2>
@@ -42,21 +42,31 @@ export default function AIChatbotFinancing() {
 </section>
 
 
+
       {/* What We Finance */}
       <section className="w-full px-6 py-12 md:py-20 bg-white flex justify-center">
-        <div className="max-w-7xl text-center">
-          <div className="text-gray-700 text-lg space-y-6">
-            <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] leading-tight mb-6">
-             Why Choose Hefty Pan Feeders?
-            </h2>
-            <p className="text-base text-black mb-6">
-         Our Pan Feeders are ideal for handling bulk materials in primary, secondary, and tertiary stages of crushing and screening. With a rugged structure and optimized design, they can efficiently feed materials to crushers, screens, and conveyors without interruption.
-          </p>
-          
-             
-        </div>
-        </div>
-      </section>
+  <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    
+    {/* Left Side - Heading */}
+    <div>
+      <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] leading-tight">
+        WHY CHOOSE PAN FEEDERS
+      </h2>
+    </div>
+
+    {/* Right Side - Content Box */}
+    <div className="bg-gray-100 shadow-md rounded-xl p-6 text-gray-700">
+      <p className="text-base text-black">
+        Our Pan Feeders are ideal for handling bulk materials in primary, 
+        secondary, and tertiary stages of crushing and screening. With a rugged 
+        structure and optimized design, they can efficiently feed materials to 
+        crushers, screens, and conveyors without interruption.
+      </p>
+    </div>
+
+  </div>
+</section>
+
 
        <section className="bg-[#ec6b24] text-white px-8 py-16">
             <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">

@@ -19,7 +19,7 @@ export default function AIChatbotFinancing() {
     <>
       {/* Hero Section */}
       <section
-  className="relative min-h-[500px] text-white bg-center bg-cover px-6"
+  className="relative min-h-[500px] h-[700px] text-white bg-center bg-cover px-6"
   style={{ backgroundImage: "url('/impactors/VI1.png')" }}
 >
   {/* Overlay for readability */}

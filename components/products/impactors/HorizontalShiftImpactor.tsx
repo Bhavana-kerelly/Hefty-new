@@ -20,15 +20,15 @@ export default function AIChatbotFinancing() {
     <>
       {/* Hero Section */}
       <section
-  className="relative min-h-[500px] flex items-center justify-center text-white bg-center bg-cover px-6"
-  style={{ backgroundImage: "url('/impactors/I1.png')" }}
+  className="relative min-h-[500px] h-[700px]flex items-center justify-center text-white bg-center bg-cover px-6"
+  style={{ backgroundImage: "url('/impactors/HI1.png')" }}
 >
   {/* Overlay for readability */}
   <div className="absolute inset-0 bg-black/50"></div>
 
   {/* Content */}
   <div className="relative max-w-5xl mx-auto text-left pr-100 md:text-left">
-    <h2 className="text-3xl font-bold mb-5">
+    <h2 className="text-3xl font-bold mb-5 pt-30">
       Horizontal Shaft Impactor (HSI)
     </h2>
     <p className="text-base text-gray-200 mb-6">

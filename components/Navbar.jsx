@@ -24,7 +24,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full shadow-md bg-white font-serif">
-      <div className="max-w-[1280px] mx-auto flex items-center justify-between h-20 px-4 md:px-6">
+      <div className="max-w-[1280px] mx-auto flex text-black items-center justify-between h-20 px-4 md:px-6">
 
         {/* Logo */}
         <Link href="/" className="flex items-center flex-shrink-0">
@@ -39,7 +39,7 @@ export default function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex flex-1 justify-center gap-2 items-center text-sm">
+        <nav className="hidden md:flex flex-1 justify-center gap-2 items-center text-sm text-black">
 
           <a href="/" className="px-3 py-2 rounded-lg hover:text-[#e96a32] transition-colors">Home</a>
           <a href="/about" className="px-3 py-2 rounded-lg hover:text-[#e96a32] transition-colors">About Us</a>

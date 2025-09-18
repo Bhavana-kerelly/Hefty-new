@@ -21,14 +21,14 @@ export default function Crushers() {
   return (
     <>
       <section
-  className="relative min-h-[500px] flex items-center justify-center text-white bg-center bg-cover px-6"
-  style={{ backgroundImage: "url('/feeders/F1.jpg')" }}
+  className="relative min-h-[500px] flex items-center justify-end text-white bg-center bg-cover px-6"
+  style={{ backgroundImage: "url('/feeders/F1.png')" }}
 >
   {/* Overlay for readability */}
   <div className="absolute inset-0 bg-black/50"></div>
 
   {/* Content */}
-  <div className="relative max-w-5xl mx-auto text-center md:text-left space-y-6">
+  <div className="relative max-w-3xl text-right space-y-6 pr-6 md:pr-12">
     <h2 className="text-3xl md:text-4xl font-bold">
       Reliable Material Handling for Every Operation
     </h2>
@@ -48,6 +48,7 @@ export default function Crushers() {
     </p>
   </div>
 </section>
+
 
       
       <section className="w-full px-6 py-12 md:py-20 bg-white flex justify-center">
