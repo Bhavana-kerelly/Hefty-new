@@ -9,9 +9,9 @@ import ContactSection from '@/components/ContactSection';
 
 
 const industries = [
-    { name: "ProFast Jaw", link: "/products/semimobileseries/profastjaw" },
-    { name: "Profast Cone", link: "/products/semimobileseries/profastcone" },
-    { name: "Profast Vertical Shaft Impactor", link: "/products/semimobileseries/profastverticalshiftimpactor" },
+    { name: "Semi Mobile Jaw", link: "/products/semimobileseries/profastjaw" },
+    { name: "Semi Mobile Cone", link: "/products/semimobileseries/profastcone" },
+    { name: "Semi Mobile Vertical Shaft Impactor", link: "/products/semimobileseries/profastverticalshiftimpactor" },
 
 
   ];
@@ -21,19 +21,19 @@ export default function Crushers() {
   return (
     <>
       <section
-  className="relative min-h-[500px] flex items-center justify-center text-white bg-center bg-cover px-6"
+  className="relative min-h-[700px]  text-white bg-center bg-cover px-6"
   style={{ backgroundImage: "url('/semimobileseries/SM1.png')" }}
 >
   {/* Overlay for readability */}
   <div className="absolute inset-0 bg-black/50"></div>
 
   {/* Content */}
-  <div className="relative max-w-5xl mx-auto text-center md:text-left space-y-6">
+  <div className="relative max-w-5xl mx-auto text-center md:text-left space-y-6 pt-50 ml-0 w-120">
     <h2 className="text-3xl md:text-4xl font-bold">
       SEMI MOBILE SERIES
     </h2>
 
-    <p className="text-base text-gray-200">
+    <p className="text-base text-gray-200 text-left">
       The HEFTY Semi Mobile Series is designed for operations that demand the
       flexibility of mobility without compromising the robustness of stationary
       crushing plants. These units are engineered to be easily transportable
@@ -50,23 +50,30 @@ export default function Crushers() {
 </section>
 
       
-      <section className="w-full px-6 py-12 md:py-20 bg-white flex justify-center">
-        <div className="max-w-7xl text-center">
-          {/* Right Side */}
-          <div className="text-gray-700 text-lg space-y-6">
-            <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] leading-tight mb-6">
-              Why Choose the HEFTY Semi Mobile Series?
-            </h2>
-            <ol className='text-base text-gray-700'>
-              <li>Versatility in Application: Suitable for mining, quarrying, and recycling operations.</li>
-              <li>Cost-Efficient Setup: Minimal civil work compared to stationary plants.</li>
-              <li>Ease of Relocation: Relocate between sites with minimal downtime.</li>
-              <li>HEFTY Durability: Built to withstand extreme operating conditions with premium-grade materials.</li>
-              <li>Optimized Performance: Designed for high throughput and consistent product quality.</li>
-            </ol>
-          </div>
-        </div>
-      </section>
+      <section className="w-full px-6 py-12 md:py-20 bg-white">
+  <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-12">
+    
+    {/* Left Side - Heading */}
+    <div className="md:w-1/3">
+      <h2 className="text-3xl md:text-4xl font-bold text-blue-900 hover:text-[#ec6b24] leading-tight pt-15 pl-5">
+        Why Choose the HEFTY Semi Mobile Series?
+      </h2>
+    </div>
+
+    {/* Right Side - Points Box */}
+    <div className="md:w-2/3 bg-gray-100 p-6 rounded-lg shadow-md">
+      <ol className="list-decimal list-inside space-y-3 text-gray-700 text-base md:text-lg">
+        <li>Versatility in Application: Suitable for mining, quarrying, and recycling operations.</li>
+        <li>Cost-Efficient Setup: Minimal civil work compared to stationary plants.</li>
+        <li>Ease of Relocation: Relocate between sites with minimal downtime.</li>
+        <li>HEFTY Durability: Built to withstand extreme operating conditions with premium-grade materials.</li>
+        <li>Optimized Performance: Designed for high throughput and consistent product quality.</li>
+      </ol>
+    </div>
+
+  </div>
+</section>
+
       
      
           <section className="bg-[#ec6b24] text-white px-8 py-16">
@@ -195,7 +202,7 @@ export default function Crushers() {
      <section>
         <div className="bg-white text-blue-900 px-6 py-16 mb-15 mt-10">
       <h2 className="text-3xl text-blue-900 hover:text-[#ec6b24] font-bold mb-10">
-        Types of SEMI MONILE SERIES :
+        TYPES OF SEMI MOBILE SERIES 
       </h2>
       
 

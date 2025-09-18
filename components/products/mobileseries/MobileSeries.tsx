@@ -23,26 +23,26 @@ export default function Crushers() {
   return (
     <>
       <section
-  className="relative min-h-[500px] flex items-center justify-center text-white bg-center bg-cover px-6"
-  style={{ backgroundImage: "url('/mobileseries/M1.png')" }}
+  className="relative min-h-[700px]  text-white bg-center bg-cover px-6"
+  style={{ backgroundImage: "url('/mobileseries/M1.jpg')" }}
 >
   {/* Overlay for readability */}
   <div className="absolute inset-0 bg-black/50"></div>
 
   {/* Content */}
-  <div className="relative max-w-5xl mx-auto text-center md:text-left space-y-6">
+  <div className="relative max-w-3xl mx-auto text-left md:text-left space-y-6 ml-0 pl-4 pt-25 ">
     <h2 className="text-3xl md:text-4xl font-bold">
       Crushing Power on the Move
     </h2>
 
-    <p className="text-base text-gray-200">
+    <p className="text-base text-gray-200 text-left pr-50">
       At Hefty, we understand that today’s projects demand flexibility, speed,
       and efficiency. That’s why our Mobile Series Crushers are designed to
       deliver full-scale crushing performance right where you need it—no matter
       how remote the location.
     </p>
 
-    <p className="text-base text-gray-200">
+    <p className="text-base text-gray-200 text-left pr-50">
       Built for easy transport, rapid setup, and uncompromising productivity, the
       Hefty Mobile Series combines the power of our world-class crushers with the
       freedom of mobility.
@@ -51,23 +51,27 @@ export default function Crushers() {
 </section>
 
       
-      <section className="w-full px-6 py-12 md:py-20 bg-white  flex justify-center">
-        <div className="max-w-7xl text-center">
-          
+      <section className="w-full px-6 py-12 md:py-20 bg-white flex justify-center">
+  <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
 
-          {/* Right Side */}
-          <div className="text-gray-700 text-lg space-y-6">
-            <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] leading-tight mb-6">
-              What is the Hefty Mobile Series?
-            </h2>
-            <p className='text-base text-gray-700'>
-              The Mobile Series is our range of track-mounted and wheel-mounted crushing units that integrate feeding, crushing, screening, and conveying in a single mobile platform. This allows you to eliminate the need for multiple transport setups, reduce material handling costs, and keep production moving without delay.
-            </p>
-            
-            
-          </div>
-        </div>
-      </section>
+    {/* Left: Heading */}
+    <div className="md:col-span-4 flex items-start md:items-center">
+      <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] leading-tight pl-5">
+        HEFTY MOBILE SERIES
+      </h2>
+    </div>
+
+    {/* Right: Description (narrower) */}
+    <div className="md:col-span-6 text-gray-700 text-base md:text-base">
+      <p>
+        The Mobile Series is our range of track-mounted and wheel-mounted crushing units that integrate feeding, crushing, screening, and conveying in a single mobile platform. This allows you to eliminate the need for multiple transport setups, reduce material handling costs, and keep production moving without delay.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
       
      
           <section className="bg-[#ec6b24] text-white px-8 py-16 ">

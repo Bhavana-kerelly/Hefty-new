@@ -24,7 +24,7 @@ export default function AboutSection() {
         </p>
       </div>
 
-      {/* Image Block */}
+      {/* Image */}
       <div className="w-full max-w-7xl">
         <img
           src="/About1.png"

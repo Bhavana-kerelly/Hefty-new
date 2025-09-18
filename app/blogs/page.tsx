@@ -49,10 +49,10 @@ export default function BlogsPage() {
     <>
       <Navbar />
 
-      {/* ✅ Responsive Banner Image */}
+      
       <div className="relative w-full h-[250px] sm:h-[400px] md:h-[500px] lg:h-[700px]">
         <Image
-          src="/blog.png" // Replace with your banner image path
+          src="/blog.png" 
           alt="Blog Banner"
           fill
           priority
@@ -62,7 +62,7 @@ export default function BlogsPage() {
 
       <div className="min-h-screen bg-gray-100 text-black py-10 sm:py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          {/* ✅ Grid adjusts based on screen */}
+          
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
             {blogs.map((blog, index) => (
               <motion.div

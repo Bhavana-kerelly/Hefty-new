@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 export default function HeftyBlog1() {
   return (
     <div className="min-h-screen bg-white relative overflow-hidden text-black">
-      {/* ✅ Subtle background */}
+      
       <div className="absolute inset-0 bg-[url('/premium-texture.png')] opacity-10 animate-pulse"></div>
 
-      {/* ✅ Responsive container */}
+      
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 relative z-10">
         {/* Title */}
         <motion.h1

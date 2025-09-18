@@ -1,4 +1,4 @@
-// components/Footer.js
+
 "use client";
 
 import Link from 'next/link';
@@ -9,10 +9,10 @@ export default function Footer() {
   return (
     <footer className="bg-white text-blue-900 py-12 font-serif">
       <div className="max-w-[1280px] mx-auto px-6">
-        {/* Grid for main sections */}
+       
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 border-b border-gray-700 pb-8">
           
-          {/* Company Info & Logo */}
+          
           <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
             <Link href="/" className="mb-4">
               <Image
@@ -62,25 +62,24 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
+          
           <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
             <h4 className="font-semibold text-lg mb-4 text-blue-900">Quick Links</h4>
             <nav className="flex flex-col space-y-2 text-sm text-blue-900">
-              <Link href="/about" className="hover:text-blue-400 transition-colors duration-300">Company</Link>
+              <Link href="/about" className="hover:text-blue-400 transition-colors duration-300">About</Link>
               <Link href="/products/crushes" className="hover:text-blue-400 transition-colors duration-300">Products</Link>
-              <Link href="/services-and-parts" className="hover:text-blue-400 transition-colors duration-300">Services & Parts</Link>
               <Link href="/blogs" className="hover:text-blue-400 transition-colors duration-300">Blogs</Link>
-              <Link href="/news" className="hover:text-blue-400 transition-colors duration-300">News</Link>
+              <Link href="/news" className="hover:text-blue-400 transition-colors duration-300">Gallery</Link>
             </nav>
           </div>
 
-          {/* Contact Information */}
+          
           <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
             <h4 className="font-semibold text-lg mb-4 text-blue-900">Contact Info</h4>
             <address className="not-italic text-sm text-blue-900 space-y-2">
               <p>Hyderabad</p>
               <p>Email: <a href="mailto:heftyofficial2025@gmail.com" className="hover:text-blue-400 transition-colors duration-300">heftyofficial2025@gmail.com</a></p>
-              <p>Phone: <a href="tel:+91 7337500757" className="hover:text-blue-400 transition-colors duration-300">+91 7337500757</a></p>
+              <p>Phone: <a href="tel:+91 7337500757" className="hover:text-blue-400 transition-colors duration-300">+91 7893800757</a></p>
             </address>
           </div>
           
@@ -109,7 +108,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Copyright */}
+        
         <div className="flex flex-col sm:flex-row items-center justify-between w-full px-4 py-2 text-blue-900 mt-6 space-y-2 sm:space-y-0">
           <p className="text-sm">&copy; {new Date().getFullYear()} Hefty Company</p>
           <p className="text-sm font-serif text-center">Designed &amp; Developed by <br/> <a

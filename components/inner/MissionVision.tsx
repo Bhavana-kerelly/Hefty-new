@@ -4,14 +4,14 @@ export default function VisionMission() {
   return (
     <section className="bg-gray-50 py-16 px-4 sm:px-6 md:py-20">
       <div className="max-w-7xl mx-auto font-serif">
-        {/* Heading */}
+        
         <h2 className="text-3xl sm:text-4xl md:text-5xl text-blue-900 hover:text-[#ec6b24] text-center mb-12 sm:mb-16">
           Our Vision & Mission
         </h2>
 
-        {/* Cards */}
+        
         <div className="flex flex-col md:flex-row gap-8 md:gap-12">
-          {/* Vision Card */}
+          
           <div className="flex-1 bg-white border border-black hover:border-[#ec6b24] rounded-lg p-6 sm:p-8 md:p-10 text-center shadow-sm">
             <div className="flex justify-center mb-6">
               <svg

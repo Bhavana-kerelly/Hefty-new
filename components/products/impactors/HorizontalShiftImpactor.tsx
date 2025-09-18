@@ -121,26 +121,33 @@ export default function AIChatbotFinancing() {
             </div>
           </section>
 
-      <section className="bg-[#f5f5f5] px-6 py-12 md:py-20 w-full  flex justify-center">
-              <div className="max-w-7xl text-center gap-12">
-                <div>
-                  <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] mb-4">
-                    Applications
-                  </h2>
-                  
-                  <ul className="space-y-4">
-                    {steps.map((step, idx) => (
-                      <li key={idx} className="flex items-start gap-3 text-gray-800 text-base md:text-lg">
-                        <CheckCircle className="text-blue-900 mt-1" size={20} />
-                        {step}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-      
-                
-              </div>
-            </section>
+      <section className="bg-[#f5f5f5] px-6 py-12 md:py-20 w-full flex justify-center">
+  <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+    
+    {/* Left Heading */}
+    <div className="flex items-center justify-center md:justify-start">
+      <h2 className="text-3xl md:text-5xl font-bold text-blue-900 hover:text-[#ec6b24] pt-23 pl-25">
+        APPLICATIONS
+      </h2>
+    </div>
+
+    {/* Right Box with Applications */}
+    <div className="bg-white border border-gray-300 rounded-lg shadow-md p-6 md:p-8">
+      <ul className="space-y-4">
+        {steps.map((step, idx) => (
+          <li
+            key={idx}
+            className="flex items-start gap-3 text-gray-800 text-base md:text-lg"
+          >
+            <CheckCircle className="text-blue-900 mt-1" size={20} />
+            {step}
+          </li>
+        ))}
+      </ul>
+    </div>
+
+  </div>
+</section>
 
             
 

@@ -26,7 +26,7 @@ export default function AIChatbotFinancing() {
   <div className="absolute inset-0 bg-black/50"></div>
 
   {/* Content */}
-  <div className="relative max-w-5xl mx-auto text-left pt-40 pr-80 pl-1">
+  <div className="relative max-w-5xl mx-auto text-left pt-50 pr-120 pl-1">
     <h2 className="text-3xl font-bold mb-5">
       VERTICAL SHAFT IMPACTOR
     </h2>
@@ -120,24 +120,33 @@ export default function AIChatbotFinancing() {
           </section>
 
    <section className="bg-[#f5f5f5] px-6 py-12 md:py-20 w-full">
-  <div className="max-w-5xl mx-auto text-center">
-    <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] mb-6">
-      Applications
-    </h2>
+  <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+    
+    {/* Left Heading */}
+    <div className="flex items-center justify-center md:justify-start">
+      <h2 className="text-3xl md:text-5xl font-bold text-blue-900 hover:text-[#ec6b24] text-center pt-20 pl-25">
+        APPLICATIONS
+      </h2>
+    </div>
 
-    <ul className="space-y-4 max-w-2xl mx-auto">
-      {steps.map((step, idx) => (
-        <li
-          key={idx}
-          className="flex items-start gap-3 text-gray-800 text-base md:text-lg"
-        >
-          <CheckCircle className="text-blue-900 mt-1" size={20} />
-          {step}
-        </li>
-      ))}
-    </ul>
+    {/* Right Applications Box */}
+    <div className="bg-white border border-gray-300 rounded-lg shadow-md p-6 md:p-8">
+      <ul className="space-y-4">
+        {steps.map((step, idx) => (
+          <li
+            key={idx}
+            className="flex items-start gap-3 text-gray-800 text-base md:text-lg"
+          >
+            <CheckCircle className="text-blue-900 mt-1" size={20} />
+            {step}
+          </li>
+        ))}
+      </ul>
+    </div>
+
   </div>
 </section>
+
 
 
             

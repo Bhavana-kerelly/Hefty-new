@@ -26,7 +26,7 @@ export default function HeroSection() {
 
   const [current, setCurrent] = useState(0);
 
-  // Auto-slide
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
@@ -59,7 +59,7 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-black/50"></div>
       </div>
 
-      {/* Arrows */}
+      
 <button
   onClick={prevSlide}
   className="absolute left-2 sm:left-6 top-1/2 -translate-y-1/2 text-white hover:text-[#ec6b24] transition-colors z-10 p-2 sm:p-3 rounded-full bg-black/30 sm:bg-black/40"
@@ -73,7 +73,7 @@ export default function HeroSection() {
   <FaChevronRight size={20} /> {/* Smaller size */}
 </button>
 
-      {/* Heading */}
+      
       <div className="max-w-full text-center px-2">
         <h1 className="font-serif text-xl sm:text-4xl text-[#ec6b24] font-bold leading-tight mb-6">
           Hyderabad’s Leading Certified Company
@@ -82,7 +82,7 @@ export default function HeroSection() {
         </h1>
       </div>
 
-      {/* Description */}
+      
       <div className="max-w-lg text-center md:text-left mx-auto md:ml-4 px-2 sm:px-0">
         <p className="text-xs sm:text-sm mb-3 sm:mb-4 text-white">
           Crushing and screening play a crucial role in driving productivity for
@@ -101,7 +101,7 @@ export default function HeroSection() {
         </p>
       </div>
 
-      {/* Features */}
+      
       <div className="flex flex-col md:flex-row justify-center md:justify-start items-center gap-4 sm:gap-8 py-6 sm:py-10 px-2 sm:px-4 rounded-lg mx-auto md:ml-4">
         {features.map((feature, index) => (
           <Fragment key={index}>
@@ -110,7 +110,7 @@ export default function HeroSection() {
               <p className="text-xs sm:text-base">{feature.title}</p>
             </div>
 
-            {/* Divider */}
+            
             {index < features.length - 1 && (
               <>
                 <div className="hidden md:block h-8 border-l border-gray-700 mx-2 sm:mx-4" />

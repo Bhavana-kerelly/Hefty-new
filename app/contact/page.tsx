@@ -29,7 +29,7 @@ export default function ContactPage() {
     <>
       <Navbar />
 
-      {/* ✅ Responsive Banner Image */}
+      
       <div className="relative w-full h-[200px] sm:h-[300px] md:h-[450px] lg:h-[600px]">
         <Image
           src="/contact1.png"
@@ -40,7 +40,7 @@ export default function ContactPage() {
         />
       </div>
 
-      {/* Main Content */}
+      
       <div className="relative min-h-screen text-black py-10 sm:py-12 px-4 sm:px-6 md:px-12 overflow-hidden bg-gray-100">
         <AnimatedBackground />
 
@@ -50,7 +50,7 @@ export default function ContactPage() {
           transition={{ duration: 0.8 }}
           className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-start relative z-10"
         >
-          {/* Left: Contact Info */}
+          
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             animate={{ opacity: 1, x: 0 }}
@@ -101,7 +101,7 @@ export default function ContactPage() {
             </div>
           </motion.div>
 
-          {/* Right: Contact Form */}
+          
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
@@ -113,7 +113,7 @@ export default function ContactPage() {
             </h2>
 
             <form className="space-y-4">
-              {/* Product Dropdown */}
+              
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -135,7 +135,7 @@ export default function ContactPage() {
 </select>
               </motion.div>
 
-              {/* Name, Email, Message */}
+             
               {["name", "email", "message"].map((field, idx) => (
                 <motion.div
                   key={field}

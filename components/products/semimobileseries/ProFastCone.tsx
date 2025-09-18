@@ -17,55 +17,44 @@ const steps = [
 export default function AIChatbotFinancing() {
   return (
     <>
-      {/* Hero Section */}
-      <section
-  className="relative min-h-[500px] flex items-center justify-center text-white bg-center bg-cover px-6"
-  style={{ backgroundImage: "url('/semimobileseries/PC1.png')" }}
->
-  {/* Overlay for readability */}
-  <div className="absolute inset-0 bg-black/50"></div>
-
-  {/* Content */}
-  <div className="relative max-w-5xl mx-auto text-center md:text-left space-y-6">
-    <h2 className="text-3xl md:text-4xl font-bold">
-      Profast Cone Crusher
-    </h2>
-
-    <p className="text-base text-gray-200">
-      The Profast Cone Crusher Series is engineered for rapid deployment, high
-      production efficiency, and cost-effective crushing. Designed for both
-      stationary and portable applications, this cone crusher offers the perfect
-      balance between mobility, performance, and durability.
-    </p>
-
-    <p className="text-base text-gray-200">
-      Its innovative design ensures quick setup and relocation, making it ideal
-      for projects that require frequent movement without compromising on
-      quality. The Profast Cone excels in delivering high-quality aggregates
-      with consistent shape and gradation — essential for concrete, asphalt, and
-      road base production.
-    </p>
-  </div>
-</section>
+      <div className="w-full h-[300px] md:h-[700px]">
+  <img
+    src="/semimobileseries/C1.png"
+    alt="Sand Washing Unit"
+    className="w-full h-[700px] object-cover"
+  />
+</div>
+      
 
 
       {/* What We Finance */}
       <section className="w-full px-6 py-12 md:py-20 bg-white flex justify-center">
-        <div className="max-w-7xl text-center">
-          <div className="text-gray-700 text-lg space-y-6">
-            <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] leading-tight mb-6">
-             Why Choose Profast Cone Crusher?
-            </h2>
-           
-             <ol className='text-base text-gray-700'>
-              <li>Rapid Installation & Commissioning: Cut down on downtime and start production faster.</li>
-              <li>Precision Crushing: Delivers superior cubical aggregates with consistent quality.</li>
-              <li>Portable & Flexible: Suited for a variety of sites, from quarries to urban projects.</li>
-              <li>Long-Term Reliability: Built to handle tough operating conditions with minimal maintenance.</li>
-             </ol>
-          </div>
-        </div>
-      </section>
+  <div className="max-w-4xl w-full">
+    {/* Heading */}
+    <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] mb-8 text-center">
+      SEMI MOBILE CONE CRUSHER
+    </h2>
+
+    {/* Content Box */}
+    <div className="bg-gray-50 p-8 rounded-lg shadow-md space-y-4">
+      <p className="text-base text-black">
+        The Profast Cone Crusher Series is engineered for rapid deployment, high
+        production efficiency, and cost-effective crushing. Designed for both
+        stationary and portable applications, this cone crusher offers the perfect
+        balance between mobility, performance, and durability.
+      </p>
+
+      <p className="text-base text-black">
+        Its innovative design ensures quick setup and relocation, making it ideal
+        for projects that require frequent movement without compromising on
+        quality. The Profast Cone excels in delivering high-quality aggregates
+        with consistent shape and gradation — essential for concrete, asphalt, and
+        road base production.
+      </p>
+    </div>
+  </div>
+</section>
+
 
        <section className="bg-[#ec6b24] text-white px-8 py-16">
             <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
@@ -135,25 +124,29 @@ export default function AIChatbotFinancing() {
             </div>
           </section>
 
-      <section className="bg-[#f5f5f5] flex justify-center py-12 md:py-20 w-full">
-  <div className="max-w-4xl text-center">
-    <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] mb-8">
-      Technical Advantages
-    </h2>
+      <section className="bg-[#f5f5f5] w-full py-12 md:py-20 flex justify-center">
+  <div className="max-w-7xl w-full flex flex-col md:flex-row items-start gap-12 px-6">
+    {/* Left Heading */}
+    <div className="md:w-1/3 text-left">
+      <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] pt-20 pl-10">
+        TECHNICAL ADVANTAGES
+      </h2>
+    </div>
 
-    <ul className="space-y-4 max-w-2xl mx-auto">
-      {steps.map((step, idx) => (
-        <li
-          key={idx}
-          className="flex items-center gap-3 text-gray-800 text-base md:text-lg justify-center"
-        >
-          <CheckCircle className="text-blue-900" size={20} />
-          <span>{step}</span>
-        </li>
-      ))}
-    </ul>
+    {/* Right Box */}
+    <div className="md:w-2/3 bg-white p-6 rounded-lg shadow-md">
+      <ul className="space-y-4">
+        {steps.map((step, idx) => (
+          <li key={idx} className="flex items-start gap-3 text-gray-800 text-base md:text-lg">
+            <CheckCircle className="text-blue-900 mt-1" size={20} />
+            {step}
+          </li>
+        ))}
+      </ul>
+    </div>
   </div>
 </section>
+
 
 
             {/* <section>

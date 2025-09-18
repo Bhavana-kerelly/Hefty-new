@@ -43,7 +43,7 @@ export default function GridGallery() {
           Image Gallery
         </h1>
 
-        {/* ✅ Grid with rectangular images, responsive */}
+        
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 w-full max-w-6xl">
           {allImages.slice(0, visibleCount).map((img) => (
             <div
@@ -61,7 +61,7 @@ export default function GridGallery() {
           ))}
         </div>
 
-        {/* Load More Button */}
+        
         {visibleCount < allImages.length && (
           <div className="w-full flex justify-center mt-8 sm:mt-10">
             <button

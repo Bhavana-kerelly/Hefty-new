@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 
-// Custom hook for count-up animation
+
 const useCountUp = (end, duration) => {
   const [count, setCount] = useState(0);
   const ref = useRef(null);
@@ -62,7 +62,7 @@ export default function SoftwareOutsourcing() {
           </p>
         </div>
 
-        {/* Statistics Section */}
+        {/* Statistics */}
         <div className="flex flex-nowrap justify-between items-center mt-12 divide-x divide-gray-500 bg-blue-900 w-full overflow-x-auto">
   <div ref={modelsRef} className="text-center px-8 py-4 flex-shrink-0">
     <div className="text-white text-lg">Models of crushers and screeners</div>

@@ -28,6 +28,6 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "components/ProductSection.jsx"  ],
   "exclude": ["node_modules"]
 }

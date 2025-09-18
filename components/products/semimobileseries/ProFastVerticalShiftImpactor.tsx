@@ -20,14 +20,14 @@ export default function AIChatbotFinancing() {
     <>
       {/* Hero Section */}
 <section
-  className="relative min-h-[500px] flex items-center justify-center text-white bg-center bg-cover px-6"
-  style={{ backgroundImage: "url('/semimobileseries/PVSI1.png')" }}
+  className="relative min-h-[700px] text-white bg-center bg-cover px-6"
+  style={{ backgroundImage: "url('/semimobileseries/PV1.png')" }}
 >
   {/* Overlay for readability */}
   <div className="absolute inset-0 bg-black/50"></div>
 
   {/* Content */}
-  <div className="relative max-w-5xl mx-auto text-center md:text-left space-y-6">
+  <div className="relative max-w-5xl mx-auto text-center md:text-left space-y-6 pt-45 w-180 ml-0 pl-7">
     <h2 className="text-3xl md:text-4xl font-bold">
       PROFAST VERTICAL SHAFT IMPACTOR
     </h2>
@@ -44,21 +44,28 @@ export default function AIChatbotFinancing() {
 
       {/* What We Finance */}
       <section className="w-full px-6 py-12 md:py-20 bg-white flex justify-center">
-        <div className="max-w-7xl text-center">
-          
-          <div className="text-gray-700 text-lg space-y-6">
-            <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] leading-tight mb-6">
-             What is a Vertical Shaft Impactor (VSI)?
-            </h2>
-             <p className="text-base text-black mb-6">
-          A VSI is a high-speed crusher that uses a rock-on-rock or rock-on-steel crushing principle to produce precisely shaped aggregates and manufactured sand. It is widely used in the production of cubical aggregates for concrete, asphalt, and road construction.
-          </p>
-             <p className="text-base text-black mb-6">
-          The Profast series VSI combines the benefits of mobile flexibility with the robustness of stationary plant performance. It ensures maximum output, reduced downtime, and exceptional particle shape, making it the go-to solution for high-specification project.
-          </p>
-          </div>
-        </div>
-      </section>
+  <div className="max-w-7xl w-full flex flex-col md:flex-row items-start gap-12">
+    
+    {/* Left Heading */}
+    <div className="md:w-1/3 text-left">
+      <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] pt-15 pl-10">
+        VERTICAL SHAFT IMPACTOR
+      </h2>
+    </div>
+
+    {/* Right Box with Content */}
+    <div className="md:w-2/3 bg-gray-100 p-6 rounded-lg shadow-md">
+      <p className="text-base text-black mb-4">
+        A VSI is a high-speed crusher that uses a rock-on-rock or rock-on-steel crushing principle to produce precisely shaped aggregates and manufactured sand. It is widely used in the production of cubical aggregates for concrete, asphalt, and road construction.
+      </p>
+      <p className="text-base text-black">
+        The Profast series VSI combines the benefits of mobile flexibility with the robustness of stationary plant performance. It ensures maximum output, reduced downtime, and exceptional particle shape, making it the go-to solution for high-specification project.
+      </p>
+    </div>
+
+  </div>
+</section>
+
 
        <section className="bg-[#ec6b24] text-white px-8 py-16">
             <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
@@ -107,23 +114,28 @@ export default function AIChatbotFinancing() {
             </div>
           </section>
 
-     <section className="bg-[#f5f5f5] flex justify-center py-12 md:py-20 w-full">
-  <div className="max-w-3xl text-center">
-    <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] mb-8">
-      Technical Advantages
-    </h2>
+     <section className="bg-[#f5f5f5] w-full py-12 md:py-20 flex justify-center">
+  <div className="max-w-7xl w-full flex flex-col md:flex-row items-start gap-12 px-6">
+    
+    {/* Left Heading */}
+    <div className="md:w-1/3 text-left">
+      <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] pt-20 pl-15">
+        TECHNICAL ADVANTAGES
+      </h2>
+    </div>
 
-    <ul className="space-y-4">
-      {steps.map((step, idx) => (
-        <li
-          key={idx}
-          className="flex items-center justify-center gap-3 text-gray-800 text-base md:text-lg"
-        >
-          <CheckCircle className="text-blue-900" size={20} />
-          <span>{step}</span>
-        </li>
-      ))}
-    </ul>
+    {/* Right Box with List */}
+    <div className="md:w-2/3 bg-white p-6 rounded-lg shadow-md">
+      <ul className="space-y-4">
+        {steps.map((step, idx) => (
+          <li key={idx} className="flex items-start gap-3 text-gray-800 text-base md:text-lg">
+            <CheckCircle className="text-blue-900 mt-1" size={20} />
+            {step}
+          </li>
+        ))}
+      </ul>
+    </div>
+
   </div>
 </section>
 

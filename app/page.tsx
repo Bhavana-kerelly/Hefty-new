@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
 import SoftwareOutsourcing from '../components/SoftwareOutsourcing';
+import ProductSection from '../components/ProductSection';
 import Faq from '../components/Faq';
 import MarqueeSection from '../components/MarqueeSection.jsx';
 import FeaturedInsights from '../components/FeaturedInsights';
@@ -13,7 +14,7 @@ import ContactSection from '@/components/ContactSection';
 import Footer from '../components/Footer';
 import Content from '../components/Content.jsx';
 import { use } from 'react';
-// ✅ Dynamically import ContactSection
+
 
 
 
@@ -24,13 +25,13 @@ export default function HomePage() {
       <HeroSection />
       <AboutSection />
       <SoftwareOutsourcing />
+      <ProductSection />
       <Content />
-      {/* <Industries /> */}
+      
       <Faq />
       <MarqueeSection />
       <FeaturedInsights />
-      {/* <FeaturedInsightsSection /> */}
-      {/* <ClientLogosSection /> */}
+      
       <Testimonials />
       <ContactSection />
       

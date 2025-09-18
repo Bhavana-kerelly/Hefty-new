@@ -39,13 +39,15 @@ export default function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex flex-1 justify-center gap-2 items-center text-sm text-black">
+        <nav className="hidden md:flex flex-1 justify-center gap-2 items-center text-sm text-black ml-40">
 
           <a href="/" className="px-3 py-2 rounded-lg hover:text-[#e96a32] transition-colors">Home</a>
           <a href="/about" className="px-3 py-2 rounded-lg hover:text-[#e96a32] transition-colors">About Us</a>
 
           {/* Products Dropdown */}
-         <div className="relative group h-full flex items-center hover:text-[#e96a32]" onMouseEnter={() => handleMouseEnter("products")} onMouseLeave={handleMouseLeave} > <span className="cursor-pointer px-3 py-2 rounded-lg transition-colors duration-300 "> Products ▾ </span> {openMenu === "products" && ( <div className="fixed top-20 left-0 right-0 bg-blue-900 shadow-2xl rounded-b-lg p-8 transition-all duration-300 ease-in-out opacity-100 animate-slide-down"> 
+         <div className="relative h-full flex items-center hover:text-[#e96a32]" onMouseEnter={() => handleMouseEnter("products")} onMouseLeave={handleMouseLeave} > <span className="cursor-pointer px-3 py-2 rounded-lg transition-colors duration-300 "> Products ▾ </span>
+          {openMenu === "products" && ( 
+            <div className="fixed top-16 left-0 right-0 bg-blue-900 shadow-2xl rounded-b-lg p-8 transition-all duration-300 ease-in-out opacity-100 animate-slide-down"> 
           <div className="grid grid-cols-5 gap-8 max-w-[1280px] mx-auto text-white text-sm"> 
             {/* Column 1: Crushes */} 
             <div className="flex flex-col space-y-3"> 
@@ -73,7 +75,7 @@ export default function Header() {
                     <a href="/products/semimobileseries/profastcone" className="hover:text-black transition-colors">Asphalt HotMix Plant</a> 
                     <a href="/products/semimobileseries/prfmqseries" className=" hover:text-black transition-colors">Coal Burner </a> 
                     <a href="/products/semimobileseries/prfmcseries" className="hover:text-black transition-colors">Coal Polverizer</a> 
-                    <a href="/products/semimobileseries/profastverticalshiftimpactor" className="hover:text-black transition-colors">Biramin Sprayer</a> 
+                    <a href="/products/semimobileseries/profastverticalshiftimpactor" className="hover:text-black transition-colors">Bitumen Sprayer</a> 
                     <a href="/products/classifier/classifier" className=" hover:text-black transition-colors">Dryer Unit</a> 
                     <a href="/products/classifier/proairclassifier" className="hover:text-black transition-colors">Bitumen Melting Machine</a> 
                     <a href="/products/classifier/proairclassifier" className="hover:text-black transition-colors">Storage Tank</a> </div> 
@@ -88,14 +90,14 @@ export default function Header() {
                       {/* Column 5: Screens, Washing, Concrete */} 
                       <div className="flex flex-col space-y-3"> 
                         <div className="font-semibold text-base mb-2"> <a href="/products/dieselgenerators/dieselgenerators" className="text-[#e96a32] hover:text-black transition-colors">Diesel Generators</a> </div> 
-                        <a href="/products/screens/vibratingscreen" className="hover:text-black transition-colors">ISKUA - 250Kva</a> </div> </div> </div> )} </div>
+                        <a href="/products/screens/vibratingscreen" className="hover:text-black transition-colors">15Kva - 250Kva</a> </div> </div> </div> )} </div>
 
           <a href="/gallery" className="px-3 py-2 rounded-lg hover:text-[#e96a32] transition-colors">Gallery</a>
           <a href="/blogs" className="px-3 py-2 rounded-lg hover:text-[#e96a32] transition-colors">Blogs</a>
           <a href="/contact" className="px-3 py-2 rounded-lg hover:text-[#e96a32] transition-colors">Contact Us</a>
 
           {/* Social icons */}
-          <div className="ml-6 flex gap-3">
+          <div className="ml-50 flex gap-3">
             <a href="https://www.facebook.com/profile.php?id=61578856662236" target="_blank" rel="noopener noreferrer" className="text-[#e96a32] hover:text-blue-700"><FaFacebookF size={16} /></a>
             <a href="https://x.com/Hefty_hyd " target="_blank" rel="noopener noreferrer" className="text-[#e96a32] hover:text-blue-700"><FaTwitter size={16} /></a>
             <a href="https://www.linkedin.com/company/108119796" target="_blank" rel="noopener noreferrer" className="text-[#e96a32] hover:text-blue-700"><FaLinkedinIn size={16} /></a>

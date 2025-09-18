@@ -20,19 +20,19 @@ export default function AIChatbotFinancing() {
     <>
       {/* Hero Section */}
       <section
-  className="relative min-h-[500px] flex items-center justify-center text-white bg-center bg-cover px-6"
-  style={{ backgroundImage: "url('/semimobileseries/PVSI1.png')" }}
+  className="relative min-h-[700px] text-white bg-center bg-cover px-6"
+  style={{ backgroundImage: "url('/mobileseries/V1.png')" }}
 >
   {/* Overlay for readability */}
   <div className="absolute inset-0 bg-black/50"></div>
 
   {/* Content */}
-  <div className="relative max-w-5xl mx-auto text-center md:text-left space-y-6">
-    <h2 className="text-3xl md:text-4xl font-bold">
+  <div className="relative max-w-5xl mx-auto text-center md:text-left space-y-6 pt-20">
+    <h2 className="text-3xl md:text-4xl font-bold text-center">
       Unleash Precision & Power – Right Where You Need It
     </h2>
 
-    <p className="text-base text-gray-200">
+    <p className="text-base text-gray-200 text-center">
       The Hefty™ TMV Series Track Mounted Vertical Shaft Impactors are engineered
       for delivering unmatched precision in producing high-quality, cubical
       aggregates and manufactured sand (M-Sand). Built for on-site mobility and
@@ -41,7 +41,7 @@ export default function AIChatbotFinancing() {
       directly where your raw material lies.
     </p>
 
-    <p className="text-base text-gray-200">
+    <p className="text-base text-gray-200 text-center">
       Whether you’re in road construction, concrete production, or mineral
       processing, the TMV Series ensures consistent output, superior particle
       shape, and reduced downtime.
@@ -51,24 +51,33 @@ export default function AIChatbotFinancing() {
 
 
       {/* What We Finance */}
-  <section className="w-full px-6 py-12 md:py-20 bg-white flex justify-center">
-  <div className="max-w-3xl text-center text-gray-700 text-lg">
-    <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] leading-tight mb-6">
-      Silent Features:
-    </h2>
+  <section className="w-full px-6 py-12 md:py-20 bg-white">
+  <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-12">
+    
+    {/* Left Side - Heading */}
+    <div className="md:w-1/3">
+      <h2 className="text-3xl md:text-4xl font-bold text-blue-900 hover:text-[#ec6b24] leading-tight pt-40 pl-10">
+        SILENT FEATURES
+      </h2>
+    </div>
 
-    <ol className="list-decimal list-inside space-y-3 inline-block text-left">
-      <li>Dust Suppression System</li>
-      <li>Light Mast (Opening Feature)</li>
-      <li>Power Source with Acoustic Canopy</li>
-      <li>Rotor Ports & Impact Cartridge options</li>
-      <li>Feeding Control System</li>
-      <li>Motorized Pulley</li>
-      <li>Wireless Tracking Remote</li>
-      <li>Dual Power Import</li>
-    </ol>
+    {/* Right Side - Points Box */}
+    <div className="md:w-2/3 bg-gray-100 p-6 rounded-lg shadow-md">
+      <ol className="list-decimal list-inside space-y-3 text-gray-700 text-base md:text-lg">
+        <li>Dust Suppression System</li>
+        <li>Light Mast (Opening Feature)</li>
+        <li>Power Source with Acoustic Canopy</li>
+        <li>Rotor Ports & Impact Cartridge options</li>
+        <li>Feeding Control System</li>
+        <li>Motorized Pulley</li>
+        <li>Wireless Tracking Remote</li>
+        <li>Dual Power Import</li>
+      </ol>
+    </div>
+
   </div>
 </section>
+
 
 
 

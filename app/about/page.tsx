@@ -4,7 +4,7 @@ import MissionVision from "@/components/inner/MissionVision";
 import CoreValues from "@/components/inner/CoreValues";
 import Faq from "@/components/Faq";
 import ContactSection from "@/components/ContactSection";
-// import ServiceSection from "@/components/ServiceSection";
+
 import Footer from "@/components/Footer";
 import SoftwareOutsourcing from "@/components/SoftwareOutsourcing";
 
@@ -13,7 +13,7 @@ const AboutUs = () => {
     <>
       <Navbar />
       <div className="about-us-container font-sans text-gray-800">
-        {/* SECTION 1: Banner Image */}
+       
         <section className="w-full">
           <Image
             src="/BannerImage2.png"
@@ -25,9 +25,9 @@ const AboutUs = () => {
           />
         </section>
 
-        {/* SECTION 2: About + Side Image */}
+       
         <section className="flex flex-col items-center gap-8 px-4 sm:px-6 md:px-8 py-10 sm:py-14 md:py-16 bg-white">
-          {/* Text Content */}
+          
           <div className="max-w-3xl text-center space-y-4 sm:space-y-6">
             <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-blue-900 hover:text-[#ec6b24]">
               About Hefty
@@ -40,7 +40,7 @@ const AboutUs = () => {
             </p>
           </div>
 
-          {/* Image Below Text */}
+          
           <div className="w-full mt-6 sm:mt-8">
             <Image
               src="/Family1.png"
@@ -52,7 +52,7 @@ const AboutUs = () => {
           </div>
         </section>
 
-        {/* Other sections */}
+        
         <SoftwareOutsourcing />
         <MissionVision />
       </div>
@@ -60,7 +60,7 @@ const AboutUs = () => {
       <CoreValues />
       <Faq />
       <ContactSection />
-      {/* <ServiceSection /> */}
+      
       <Footer />
     </>
   );

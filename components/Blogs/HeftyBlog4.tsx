@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 export default function HeftyBlog4() {
   return (
     <div className="min-h-screen bg-white relative overflow-hidden text-black">
-      {/* Premium metallic texture overlay */}
+      
       <div className="absolute inset-0 bg-[url('/metal-texture.jpg')] bg-cover opacity-10 animate-pulse"></div>
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10 sm:py-16 relative z-10">
-        {/* Main Title */}
+        
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}

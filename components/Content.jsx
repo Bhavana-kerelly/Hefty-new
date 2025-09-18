@@ -48,7 +48,7 @@ export default function SoftwareOutsourcing() {
       <div className="max-w-7xl mx-auto space-y-20">
         {sections.map((section, idx) => (
           <div key={idx} className="flex flex-col items-center text-center">
-            {/* Section Title & Description */}
+           
             <div className="space-y-4 sm:space-y-6">
               <h2 className="text-3xl sm:text-4xl md:text-5xl text-blue-900 hover:text-[#ec6b24] transition-colors font-bold">
                 {section.title}
@@ -58,7 +58,7 @@ export default function SoftwareOutsourcing() {
               </p>
             </div>
 
-            {/* Section Items */}
+            
             <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-6 sm:gap-12 mt-6 sm:mt-8">
               {section.items.map((item, index) => (
                 <div
@@ -82,7 +82,7 @@ export default function SoftwareOutsourcing() {
               ))}
             </div>
 
-            {/* Optional Read More Button */}
+            
             {section.hasButton && (
               <button
                 className="mt-6 sm:mt-8 px-6 py-3 font-semibold rounded-full bg-black text-white hover:bg-gray-800 transition-colors"
@@ -92,7 +92,7 @@ export default function SoftwareOutsourcing() {
               </button>
             )}
 
-            {/* Divider */}
+            
             {idx < sections.length - 1 && (
               <hr className="my-8 sm:my-12 border-t border-gray-300 w-full" />
             )}

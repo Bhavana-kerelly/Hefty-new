@@ -20,19 +20,19 @@ export default function TrackMountedConeCrusher() {
     <>
       {/* Hero Section */}
       <section
-  className="relative min-h-[500px] flex items-center justify-center text-white bg-center bg-cover px-6"
-  style={{ backgroundImage: "url('/semimobileseries/PC1.png')" }}
+  className="relative min-h-[700px] text-white bg-center bg-cover px-6"
+  style={{ backgroundImage: "url('/mobileseries/C1.png')" }}
 >
   {/* Overlay for readability */}
   <div className="absolute inset-0 bg-black/50"></div>
 
   {/* Content */}
-  <div className="relative max-w-5xl mx-auto text-center md:text-left space-y-6">
-    <h2 className="text-3xl md:text-4xl font-bold">
+  <div className="relative max-w-5xl mx-auto text-center md:text-left space-y-6 pt-30 ">
+    <h2 className="text-3xl md:text-4xl font-bold text-center">
       Precision Crushing. Mobile Freedom.
     </h2>
 
-    <p className="text-base text-gray-200">
+    <p className="text-base text-gray-200 text-center">
       The Hefty Track Mounted Cone Crusher is built to deliver high-quality
       secondary and tertiary crushing with the flexibility of full mobility.
       Designed for demanding applications in mining, quarrying, construction,
@@ -45,19 +45,28 @@ export default function TrackMountedConeCrusher() {
 
       {/* What We Finance */}
       <section className="w-full px-6 py-12 md:py-20 bg-white">
-        <div className="max-w-7xl text-center">
-          <div className="text-gray-700 text-lg space-y-6">
-            <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] leading-tight mb-6">
-           What is a Track Mounted Cone Crusher?
-            </h2>
-            <p className='text-base text-gray-700'>
-              A Track Mounted Cone Crusher combines the advanced crushing technology of a cone crusher with the mobility of heavy-duty crawler tracks. This allows the unit to move seamlessly around your worksite and crush material directly at the source, reducing transportation costs and boosting efficiency.
-            </p>
-             <p className="text-base text-gray-700">Hefty The Hefty Track Mounted Cone Crusher is ideal for projects that require precision, portability, and fast setup times without compromising on crushing power.</p>
-           
-          </div>
-        </div>
-      </section>
+  <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-12">
+    
+    {/* Left Side - Heading */}
+    <div className="md:w-1/3">
+      <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] leading-tight pt-10">
+        TRACK MOUNTED <br/> CONE CRUSHER
+      </h2>
+    </div>
+
+    {/* Right Side - Content Box */}
+    <div className="md:w-2/3 bg-gray-100 p-6 rounded-lg shadow-md text-gray-700 space-y-4">
+      <p className="text-base">
+        A Track Mounted Cone Crusher combines the advanced crushing technology of a cone crusher with the mobility of heavy-duty crawler tracks. This allows the unit to move seamlessly around your worksite and crush material directly at the source, reducing transportation costs and boosting efficiency.
+      </p>
+      <p className="text-base">
+        Hefty The Hefty Track Mounted Cone Crusher is ideal for projects that require precision, portability, and fast setup times without compromising on crushing power.
+      </p>
+    </div>
+
+  </div>
+</section>
+
 
        <section className="bg-[#ec6b24] text-white px-8 py-16">
             <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
@@ -124,22 +133,27 @@ export default function TrackMountedConeCrusher() {
           </section>
 
       <section className="bg-[#f5f5f5] flex justify-center py-12 md:py-20 w-full">
-  <div className="max-w-4xl text-center">
-    <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] mb-8">
-      Technical Advantages
-    </h2>
+  <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+    
+    {/* Left Column: Heading */}
+    <div className="md:col-span-4 flex items-start md:items-center">
+      <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] pt-25 pl-10">
+        ADVANTAGES
+      </h2>
+    </div>
 
-    <ul className="space-y-4 max-w-2xl mx-auto">
-      {steps.map((step, idx) => (
-        <li
-          key={idx}
-          className="flex items-center gap-3 text-gray-800 text-base md:text-lg justify-center"
-        >
-          <CheckCircle className="text-blue-900" size={20} />
-          <span>{step}</span>
-        </li>
-      ))}
-    </ul>
+    {/* Right Column: Points Box */}
+    <div className="md:col-span-8 bg-white border border-gray-300 rounded-lg p-6 shadow space-y-4">
+      <ul className="space-y-4">
+        {steps.map((step, idx) => (
+          <li key={idx} className="flex items-start gap-3 text-gray-800 text-base md:text-lg">
+            <CheckCircle className="text-blue-900 mt-1" size={20} />
+            <span>{step}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+
   </div>
 </section>
 

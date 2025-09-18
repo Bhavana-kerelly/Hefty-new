@@ -19,19 +19,19 @@ export default function AIChatbotFinancing() {
     <>
       {/* Hero Section */}
       <section
-  className="relative min-h-[500px] flex items-center justify-start text-white bg-center bg-cover px-6"
+  className="relative min-h-[700px] flex pt-27 pl-15 justify-start text-white bg-center bg-cover px-6"
   style={{ backgroundImage: "url('/feeders/P1.png')" }}
 >
   {/* Overlay for readability */}
   <div className="absolute inset-0 bg-black/50"></div>
 
   {/* Content */}
-  <div className="relative max-w-3xl text-left space-y-6">
-    <h2 className="text-3xl md:text-4xl font-bold">
+  <div className="relative max-w-3xl space-y-6 text-black ">
+    <h2 className="text-3xl md:text-4xl font-bold w-200">
       Precision Feeding for Consistent Performance
     </h2>
 
-    <p className="text-base text-gray-200">
+    <p className="text-base text-black pr-40 text-left">
       At Hefty, our Pan Feeders are engineered to deliver controlled and
       consistent material flow for a variety of applications — from mining and
       aggregates to recycling and industrial processes. Designed with durability,
@@ -144,23 +144,30 @@ export default function AIChatbotFinancing() {
           </section>
 
       <section className="bg-[#f5f5f5] px-6 py-12 md:py-20 w-full flex justify-center">
-              <div className="max-w-7xl text-center gap-12">
-                <div>
-                  <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] mb-4">
-                    Highlights 
-                  </h2>
-                  
-                  <ul className="space-y-4">
-                    {steps.map((step, idx) => (
-                      <li key={idx} className="flex items-start gap-3 text-gray-800 text-base md:text-lg">
-                        <CheckCircle className="text-blue-900 mt-1" size={20} />
-                        {step}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </section>
+  <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+    
+    {/* Left: Heading */}
+    <div className="md:col-span-4 flex items-start md:items-center">
+      <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] pt-30 pl-10">
+        HIGHLIGHTS
+      </h2>
+    </div>
+
+    {/* Right: Points Box */}
+    <div className="md:col-span-8 bg-white border border-gray-300 rounded-lg shadow-md p-6">
+      <ul className="space-y-4">
+        {steps.map((step, idx) => (
+          <li key={idx} className="flex items-start gap-3 text-gray-800 text-base md:text-lg">
+            <CheckCircle className="text-blue-900 mt-1" size={20} />
+            {step}
+          </li>
+        ))}
+      </ul>
+    </div>
+
+  </div>
+</section>
+
       <ContactSection />
       
     </>

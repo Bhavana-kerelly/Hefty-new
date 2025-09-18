@@ -20,7 +20,7 @@ export default function AIChatbotFinancing() {
     <>
       {/* Hero Section */}
 <section
-  className="relative min-h-[500px] flex items-center justify-start text-white bg-center bg-cover px-6"
+  className="relative min-h-[700px] flex items-center justify-start text-white bg-center bg-cover px-6"
   style={{ backgroundImage: "url('/feeders/G1.png')" }}
 >
   {/* Overlay for readability */}
@@ -32,7 +32,7 @@ export default function AIChatbotFinancing() {
       Built for Unmatched Durability & Precision Feeding
     </h2>
 
-    <p className="text-base text-gray-200">
+    <p className="text-base text-gray-200 pr-40">
       When it comes to handling the toughest materials in mining, quarrying, and
       recycling operations, Hefty Grizzly Feeders stand as the industry benchmark.
       Engineered for high-capacity feeding, effective scalping, and exceptional
@@ -133,24 +133,35 @@ export default function AIChatbotFinancing() {
             </div>
           </section>
 
-      <section className="bg-[#f5f5f5] px-6 py-12 md:py-20 w-full  flex justify-center">
-              <div className="max-w-7xl text-center gap-12">
-                <div>
-                  <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] mb-4">
-                    Highlights 
-                  </h2>
-                  
-                  <ul className="space-y-4">
-                    {steps.map((step, idx) => (
-                      <li key={idx} className="flex items-start gap-3 text-gray-800 text-base md:text-lg">
-                        <CheckCircle className="text-blue-900 mt-1" size={20} />
-                        {step}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </section>
+      <section className="bg-[#f5f5f5] px-6 py-12 md:py-20 w-full flex justify-center">
+  <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+    
+    {/* Left: Heading */}
+    <div className="md:col-span-4 flex items-center justify-center md:justify-start">
+      <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] text-center pt-27 pl-8">
+        HIGHLIGHTS
+      </h2>
+    </div>
+
+    {/* Right: Points in a Box */}
+    <div className="md:col-span-8 bg-white border border-gray-300 rounded-lg shadow-md p-6">
+      <ul className="space-y-4">
+        {steps.map((step, idx) => (
+          <li
+            key={idx}
+            className="flex items-start gap-3 text-gray-800 text-base md:text-lg"
+          >
+            <CheckCircle className="text-blue-900 mt-1" size={20} />
+            {step}
+          </li>
+        ))}
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
 
             
 

@@ -39,7 +39,7 @@ export default function FaqSection() {
 
   return (
     <section className="py-12 sm:py-16 px-4 sm:px-6 bg-white flex flex-col items-center gap-10 sm:gap-12">
-      {/* Full-width Image */}
+      
       <div className="w-full">
         <img
           src="/WhyChoose1.png"
@@ -48,7 +48,7 @@ export default function FaqSection() {
         />
       </div>
 
-      {/* FAQ Section */}
+      
       <div className="w-full max-w-3xl">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-blue-900 mb-6 sm:mb-8">
           Why Choose Hefty

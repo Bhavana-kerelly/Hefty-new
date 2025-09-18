@@ -2,7 +2,7 @@
 
 import { FaArrowRight } from "react-icons/fa6";
 
-// Inline styling for animation
+
 const styles = {
   marqueeWrapper: {
     overflow: "hidden",
@@ -28,7 +28,7 @@ const styles = {
   },
 };
 
-// Keyframes in <style> tag
+
 const keyframes = `
 @keyframes marquee {
   0%   { transform: translateX(0%); }
@@ -51,7 +51,7 @@ const keyframes = `
 export default function MarqueeSection() {
   return (
     <>
-      {/* Injecting keyframes into the DOM */}
+      
       <style>{keyframes}</style>
 
       <div style={styles.marqueeWrapper}>

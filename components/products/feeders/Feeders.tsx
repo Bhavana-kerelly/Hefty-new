@@ -29,7 +29,7 @@ export default function Crushers() {
 
   {/* Content */}
   <div className="relative max-w-5xl mx-auto text-left pr-100 md:text-left">
-    <h2 className="text-3xl md:text-4xl font-bold">
+    <h2 className="text-3xl md:text-4xl font-bold mb-10">
       Reliable Material Handling for Every Operation
     </h2>
 

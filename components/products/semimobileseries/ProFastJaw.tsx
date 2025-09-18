@@ -18,19 +18,19 @@ export default function AIChatbotFinancing() {
     <>
       {/* Hero Section */}
       <section
-  className="relative min-h-[500px] flex items-center justify-center text-white bg-center bg-cover px-6"
+  className="relative min-h-[700px] text-white bg-center bg-cover px-6"
   style={{ backgroundImage: "url('/semimobileseries/PJ1.png')" }}
 >
   {/* Overlay for readability */}
   <div className="absolute inset-0 bg-black/50"></div>
 
   {/* Content */}
-  <div className="relative max-w-5xl mx-auto text-center md:text-left space-y-6">
-    <h2 className="text-3xl md:text-4xl font-bold">
+  <div className="relative max-w-5xl mx-auto text-center md:text-left space-y-6 pt-20">
+    <h2 className="text-3xl md:text-4xl font-bold text-center">
       PROFAST JAW
     </h2>
 
-    <p className="text-base text-gray-200">
+    <p className="text-base text-gray-200 text-center w-270">
       The Profast Jaw Crusher is engineered for rapid deployment, high mobility,
       and unmatched efficiency. Built for both primary and secondary crushing
       applications, it combines speed, strength, and smart engineering to deliver
@@ -41,19 +41,26 @@ export default function AIChatbotFinancing() {
 
 
       {/* What We Finance */}
-      <section className="w-full px-6 py-12 md:py-20 bg-white flex justify-center">
-        <div className="max-w-7xl text-center">
-          <div className="text-gray-700 text-lg space-y-6">
-            <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] leading-tight mb-6">
-             What is Profast Jaw?
-            </h2>
-            <p className='text-base text-gray-700'>
-              The Profast Jaw is part of Hailstone’s Profast Series—a line of portable, skid-mounted, and quick-to-install crushing solutions. Designed to minimize setup time and maximize productivity, it is the ideal choice for contractors, mining operators, and aggregate producers who need fast returns on investment without compromising on quality
-            </p>
-             
-          </div>
-        </div>
-      </section>
+      <section className="w-full px-6 py-12 md:py-20 bg-white">
+  <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-12">
+    
+    {/* Left Side - Heading */}
+    <div className="md:w-1/3">
+      <h2 className="text-3xl md:text-4xl font-bold text-blue-900 hover:text-[#ec6b24] leading-tight pt-10 pl-5">
+        SEMI MOBILE JAW
+      </h2>
+    </div>
+
+    {/* Right Side - Content */}
+    <div className="md:w-2/3 text-black bg-gray-200 border-gray-700 text-base md:text-lg p-4">
+      <p>
+        The Profast Jaw is part of Hailstone’s Profast Series—a line of portable, skid-mounted, and quick-to-install crushing solutions. Designed to minimize setup time and maximize productivity, it is the ideal choice for contractors, mining operators, and aggregate producers who need fast returns on investment without compromising on quality.
+      </p>
+    </div>
+
+  </div>
+</section>
+
 
        <section className="bg-[#ec6b24] text-white px-8 py-16">
             <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
@@ -117,23 +124,30 @@ export default function AIChatbotFinancing() {
           </section>
 
       <section className="bg-[#f5f5f5] px-6 py-12 md:py-20 w-full flex justify-center">
-              <div className="max-w-7xl text-center">
-                <div>
-                  <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 hover:text-[#ec6b24] mb-4">
-                    Highlights :
-                  </h2>
-                  
-                  <ul className="space-y-4">
-                    {steps.map((step, idx) => (
-                      <li key={idx} className="flex items-start text-center gap-3 text-gray-800 text-base md:text-lg">
-                        <CheckCircle className="text-blue-900 mt-1" size={20} />
-                        {step}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </section>
+  <div className="max-w-7xl w-full flex flex-col md:flex-row items-start gap-12">
+    
+    {/* Left Side - Heading */}
+    <div className="md:w-1/3">
+      <h2 className="text-3xl md:text-4xl font-bold text-blue-900 hover:text-[#ec6b24] pt-25 pl-10">
+        HIGHLIGHTS
+      </h2>
+    </div>
+
+    {/* Right Side - Highlights in Box */}
+    <div className="md:w-2/3 bg-white p-6 rounded-lg shadow-md">
+      <ul className="space-y-4">
+        {steps.map((step, idx) => (
+          <li key={idx} className="flex items-start gap-3 text-gray-800 text-base md:text-lg">
+            <CheckCircle className="text-blue-900 mt-1" size={20} />
+            {step}
+          </li>
+        ))}
+      </ul>
+    </div>
+
+  </div>
+</section>
+
 
       <ContactSection />
       

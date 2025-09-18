@@ -7,7 +7,7 @@ const offices = [
   {
     city: "Hyderabad",
     address: "Hyderabad",
-    phone: "+91 73375 00757",
+    phone: "+91 7893800757",
     map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.186118357271!2d78.42800247504466!3d17.406498083457985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1716302000000!5m2!1sen!2sin",
   },
 ];
@@ -15,7 +15,7 @@ const offices = [
 export default function ContactSection() {
   return (
     <div style={styles.container}>
-      {/* Left Form Section */}
+      
       <motion.div
         style={styles.left}
         initial={{ opacity: 0, x: -50 }}
@@ -58,7 +58,7 @@ export default function ContactSection() {
         </form>
       </motion.div>
 
-      {/* Right Offices Section */}
+      
       <motion.div
         style={styles.right}
         initial={{ opacity: 0, x: 50 }}
@@ -102,7 +102,7 @@ export default function ContactSection() {
 const styles = {
   container: {
     display: "flex",
-    flexWrap: "wrap", // allows stacking on small screens
+    flexWrap: "wrap", 
     backgroundColor: "#ec6b24",
     color: "#fff",
     padding: "30px 15px",
@@ -111,7 +111,7 @@ const styles = {
   },
   left: {
     flex: "1 1 500px",
-    minWidth: "300px", // shrinks on mobile
+    minWidth: "300px", 
     backgroundColor: "#ec6b24",
     padding: "20px",
     borderRadius: "10px",
@@ -171,11 +171,11 @@ const styles = {
   },
   flexRow: {
     display: "flex",
-    flexWrap: "wrap", // allow inputs to stack
+    flexWrap: "wrap", 
     gap: "10px",
   },
   flexHalf: {
-    flex: "1 1 200px", // shrinks on mobile
+    flex: "1 1 200px", 
   },
   officeList: {
     display: "flex",
@@ -183,7 +183,7 @@ const styles = {
     gap: "20px",
   },
   office: {
-    flex: "1 1 100%", // stack vertically on small screens
+    flex: "1 1 100%", 
     border: "1px solid white",
     borderRadius: "8px",
     padding: "15px",
@@ -200,7 +200,7 @@ const styles = {
   mapContainer: {
     marginTop: "15px",
     width: "100%",
-    height: "200px", // smaller map for mobile
+    height: "200px", 
   },
   mapIframe: {
     width: "100%",
