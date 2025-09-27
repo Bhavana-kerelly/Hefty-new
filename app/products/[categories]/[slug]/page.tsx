@@ -1,4 +1,5 @@
 // app/products/[categories]/[slug]/page.tsx
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -23,8 +24,8 @@ import GrizzlyFeeder from "@/components/products/feeders/GrizzlyFeeder";
 import PanFeeder from "@/components/products/feeders/PanFeeder";
 
 import Impactors from "@/components/products/impactors/Impactors";
-import HorizontalShiftImpactor from "@/components/products/impactors/HorizontalShiftImpactor";
 import VerticalShiftImpactor from "@/components/products/impactors/VerticalShiftImpactor";
+import HorizontalShiftImpactor from "@/components/products/impactors/HorizontalShiftImpactor";
 
 import ConcreteBatchingSolution from "@/components/products/concretebatchingsolution/ConcreteBatchingSolution";
 import ConcreteBatchingPlant from "@/components/products/concretebatchingsolution/ConcreteBatchingPlant";
@@ -33,7 +34,6 @@ import WetmixMacadamPlant from "@/components/products/concretebatchingsolution/W
 
 import DieselGenerators from "@/components/products/dieselgenerators/DieselGenerators";
 
-// ✅ Map of all product components
 const productsMap: Record<string, React.ComponentType> = {
   crushers: Crushers,
   jawcrushers: JawCrushers,
@@ -67,7 +67,7 @@ const productsMap: Record<string, React.ComponentType> = {
   dieselgenerators: DieselGenerators,
 };
 
-// ✅ Correct type for page props
+// ✅ Page props type
 interface ProductPageProps {
   params: {
     categories: string;
@@ -75,9 +75,11 @@ interface ProductPageProps {
   };
 }
 
-// ✅ The actual page component
 export default function ProductPage({ params }: ProductPageProps) {
-  const key = params.slug.toLowerCase() as keyof typeof productsMap;
+  const category = params.categories?.toLowerCase();
+  const slug = params.slug?.toLowerCase();
+
+  const key = slug || category;
   const Component = productsMap[key];
 
   if (!Component) {
@@ -99,7 +101,7 @@ export default function ProductPage({ params }: ProductPageProps) {
   );
 }
 
-// ✅ Pre-generate static paths
+// ✅ Tell Next.js which paths to build
 export async function generateStaticParams() {
   return [
     { categories: "crushers", slug: "jawcrushers" },
