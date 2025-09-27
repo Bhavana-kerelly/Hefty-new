@@ -34,7 +34,12 @@ import WetmixMacadamPlant from "@/components/products/concretebatchingsolution/W
 
 import DieselGenerators from "@/components/products/dieselgenerators/DieselGenerators";
 
-// ✅ Map product slugs to components
+interface PageParams {
+  categories: string;
+  slug: string;
+}
+
+// Map product slugs to components
 const productsMap: Record<string, React.ComponentType> = {
   crushers: Crushers,
   jawcrushers: JawCrushers,
@@ -68,8 +73,8 @@ const productsMap: Record<string, React.ComponentType> = {
   dieselgenerators: DieselGenerators,
 };
 
-// ✅ Let Next.js infer the `params` type automatically
-export default function ProductPage({ params }: { params: { categories: string; slug: string } }) {
+// Page component
+export default function ProductPage({ params }: { params: PageParams }) {
   const category = params.categories?.toLowerCase();
   const slug = params.slug?.toLowerCase();
 
@@ -95,8 +100,8 @@ export default function ProductPage({ params }: { params: { categories: string; 
   );
 }
 
-// ✅ Tell Next.js which routes to pre-build
-export async function generateStaticParams() {
+// Properly typed generateStaticParams
+export async function generateStaticParams(): Promise<PageParams[]> {
   return [
     { categories: "crushers", slug: "jawcrushers" },
     { categories: "crushers", slug: "conecrushers" },
