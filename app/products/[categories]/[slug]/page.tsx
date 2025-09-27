@@ -34,11 +34,11 @@ import WetmixMacadamPlant from "@/components/products/concretebatchingsolution/W
 
 import DieselGenerators from "@/components/products/dieselgenerators/DieselGenerators";
 
-// Define the type for the dynamic route parameters
-interface PageParams {
+// The simplest definition for the dynamic route parameters
+type ProductPageParams = {
   categories: string;
   slug: string;
-}
+};
 
 // Map product slugs to components
 const productsMap: Record<string, React.ComponentType> = {
@@ -74,12 +74,11 @@ const productsMap: Record<string, React.ComponentType> = {
   dieselgenerators: DieselGenerators,
 };
 
-// Next.js App Router Page Component with correct type for params
-export default async function ProductPage({ params }: { params: PageParams }) {
+// *THE FIX IS HERE:* Using the minimal inline type on the component argument.
+export default async function ProductPage({ params }: { params: ProductPageParams }) {
   const category = params.categories?.toLowerCase();
   const slug = params.slug?.toLowerCase();
 
-  // Logic to determine which component to load: prefers slug, falls back to category
   const key = slug || category;
   const Component = productsMap[key];
 
@@ -102,8 +101,8 @@ export default async function ProductPage({ params }: { params: PageParams }) {
   );
 }
 
-// Function to generate static params for Static Site Generation (SSG)
-export async function generateStaticParams(): Promise<PageParams[]> {
+// Type the return value of generateStaticParams using the defined type
+export async function generateStaticParams(): Promise<ProductPageParams[]> {
   return [
     { categories: "crushers", slug: "jawcrushers" },
     { categories: "crushers", slug: "conecrushers" },
