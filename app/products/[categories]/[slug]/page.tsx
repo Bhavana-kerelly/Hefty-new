@@ -34,13 +34,13 @@ import WetmixMacadamPlant from "@/components/products/concretebatchingsolution/W
 
 import DieselGenerators from "@/components/products/dieselgenerators/DieselGenerators";
 
-// The simplest definition for the dynamic route parameters
+// ✅ Type for the dynamic route params
 type ProductPageParams = {
   categories: string;
   slug: string;
 };
 
-// Map product slugs to components
+// ✅ Map product slugs to components
 const productsMap: Record<string, React.ComponentType> = {
   crushers: Crushers,
   jawcrushers: JawCrushers,
@@ -74,8 +74,12 @@ const productsMap: Record<string, React.ComponentType> = {
   dieselgenerators: DieselGenerators,
 };
 
-// *THE FIX IS HERE:* Using the minimal inline type on the component argument.
-export default async function ProductPage({ params }: { params: ProductPageParams }) {
+// ✅ Fix params typing
+export default async function ProductPage({
+  params,
+}: {
+  params: ProductPageParams;
+}) {
   const category = params.categories?.toLowerCase();
   const slug = params.slug?.toLowerCase();
 
@@ -101,8 +105,10 @@ export default async function ProductPage({ params }: { params: ProductPageParam
   );
 }
 
-// Type the return value of generateStaticParams using the defined type
-export async function generateStaticParams(): Promise<ProductPageParams[]> {
+// ✅ Fix generateStaticParams typing
+export async function generateStaticParams(): Promise<
+  { categories: string; slug: string }[]
+> {
   return [
     { categories: "crushers", slug: "jawcrushers" },
     { categories: "crushers", slug: "conecrushers" },
