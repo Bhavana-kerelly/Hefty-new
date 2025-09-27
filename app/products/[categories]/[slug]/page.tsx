@@ -34,6 +34,7 @@ import WetmixMacadamPlant from "@/components/products/concretebatchingsolution/W
 
 import DieselGenerators from "@/components/products/dieselgenerators/DieselGenerators";
 
+// ✅ Define params type
 interface PageParams {
   categories: string;
   slug: string;
@@ -73,8 +74,8 @@ const productsMap: Record<string, React.ComponentType> = {
   dieselgenerators: DieselGenerators,
 };
 
-// Page component
-export default function ProductPage({ params }: { params: PageParams }) {
+// ✅ Async page component
+export default async function ProductPage({ params }: { params: PageParams }) {
   const category = params.categories?.toLowerCase();
   const slug = params.slug?.toLowerCase();
 
@@ -100,7 +101,7 @@ export default function ProductPage({ params }: { params: PageParams }) {
   );
 }
 
-// Properly typed generateStaticParams
+// ✅ Properly typed generateStaticParams
 export async function generateStaticParams(): Promise<PageParams[]> {
   return [
     { categories: "crushers", slug: "jawcrushers" },
