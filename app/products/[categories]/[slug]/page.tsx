@@ -34,13 +34,13 @@ import WetmixMacadamPlant from "@/components/products/concretebatchingsolution/W
 
 import DieselGenerators from "@/components/products/dieselgenerators/DieselGenerators";
 
-// ✅ Type for the dynamic route params
+// Route params type
 type ProductPageParams = {
   categories: string;
   slug: string;
 };
 
-// ✅ Map product slugs to components
+// Map product slugs to components
 const productsMap: Record<string, React.ComponentType> = {
   crushers: Crushers,
   jawcrushers: JawCrushers,
@@ -74,14 +74,10 @@ const productsMap: Record<string, React.ComponentType> = {
   dieselgenerators: DieselGenerators,
 };
 
-// ✅ Fix params typing
-export default async function ProductPage({
-  params,
-}: {
-  params: ProductPageParams;
-}) {
-  const category = params.categories?.toLowerCase();
-  const slug = params.slug?.toLowerCase();
+// ✅ Don’t mark as async unless you fetch data
+export default function ProductPage({ params }: { params: ProductPageParams }) {
+  const category = params.categories.toLowerCase();
+  const slug = params.slug.toLowerCase();
 
   const key = slug || category;
   const Component = productsMap[key];
@@ -105,7 +101,7 @@ export default async function ProductPage({
   );
 }
 
-// ✅ Fix generateStaticParams typing
+// ✅ generateStaticParams must return an array of objects with params shape
 export async function generateStaticParams(): Promise<
   { categories: string; slug: string }[]
 > {
