@@ -1,6 +1,9 @@
+// app/products/[categories]/[slug]/page.tsx
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
+// --- your imports (kept the same) ---
 import Crushers from "@/components/products/crushers/Crushers";
 import JawCrushers from "@/components/products/crushers/JawCrushers";
 import ConeCrushers from "@/components/products/crushers/ConeCrushers";
@@ -32,7 +35,7 @@ import WetmixMacadamPlant from "@/components/products/concretebatchingsolution/W
 
 import DieselGenerators from "@/components/products/dieselgenerators/DieselGenerators";
 
-// Map products to keys
+// --- Product Map ---
 const productsMap: Record<string, React.ComponentType> = {
   crushers: Crushers,
   jawcrushers: JawCrushers,
@@ -66,45 +69,39 @@ const productsMap: Record<string, React.ComponentType> = {
   dieselgenerators: DieselGenerators,
 };
 
-// Type for static paths
-interface ProductPageParams {
-  categories: keyof typeof productsMap;
-  slug: keyof typeof productsMap;
-}
-
-// Pre-generate static paths
-export async function generateStaticParams(): Promise<ProductPageParams[]> {
+// --- generateStaticParams ---
+export async function generateStaticParams() {
   return [
-    { categories: "crushers", slug: "jawcrushers" },
-    { categories: "crushers", slug: "conecrushers" },
-    { categories: "crushers", slug: "sandwashingunit" },
-    { categories: "crushers", slug: "vibratingscreen" },
+    { params: { categories: "crushers", slug: "jawcrushers" } },
+    { params: { categories: "crushers", slug: "conecrushers" } },
+    { params: { categories: "crushers", slug: "sandwashingunit" } },
+    { params: { categories: "crushers", slug: "vibratingscreen" } },
 
-    { categories: "mobileseries", slug: "trackmountedconecrusher" },
-    { categories: "mobileseries", slug: "trackmountedjawcrusher" },
-    { categories: "mobileseries", slug: "trackmountedverticalshiftimpactor" },
+    { params: { categories: "mobileseries", slug: "trackmountedconecrusher" } },
+    { params: { categories: "mobileseries", slug: "trackmountedjawcrusher" } },
+    { params: { categories: "mobileseries", slug: "trackmountedverticalshiftimpactor" } },
 
-    { categories: "semimobileseries", slug: "profastcone" },
-    { categories: "semimobileseries", slug: "profastjaw" },
-    { categories: "semimobileseries", slug: "profastverticalshiftimpactor" },
-    { categories: "semimobileseries", slug: "semimobileseries" },
+    { params: { categories: "semimobileseries", slug: "profastcone" } },
+    { params: { categories: "semimobileseries", slug: "profastjaw" } },
+    { params: { categories: "semimobileseries", slug: "profastverticalshiftimpactor" } },
+    { params: { categories: "semimobileseries", slug: "semimobileseries" } },
 
-    { categories: "feeders", slug: "grizzlyfeeder" },
-    { categories: "feeders", slug: "panfeeder" },
+    { params: { categories: "feeders", slug: "grizzlyfeeder" } },
+    { params: { categories: "feeders", slug: "panfeeder" } },
 
-    { categories: "impactors", slug: "horizontalshiftimpactor" },
-    { categories: "impactors", slug: "verticalshiftimpactor" },
+    { params: { categories: "impactors", slug: "horizontalshiftimpactor" } },
+    { params: { categories: "impactors", slug: "verticalshiftimpactor" } },
 
-    { categories: "concretebatchingsolution", slug: "concretebatchingsolution" },
-    { categories: "concretebatchingsolution", slug: "concretebatchingplant" },
-    { categories: "concretebatchingsolution", slug: "concretepumps" },
-    { categories: "concretebatchingsolution", slug: "wetmixmacadamplant" },
+    { params: { categories: "concretebatchingsolution", slug: "concretebatchingsolution" } },
+    { params: { categories: "concretebatchingsolution", slug: "concretebatchingplant" } },
+    { params: { categories: "concretebatchingsolution", slug: "concretepumps" } },
+    { params: { categories: "concretebatchingsolution", slug: "wetmixmacadamplant" } },
 
-    { categories: "dieselgenerators", slug: "dieselgenerators" },
+    { params: { categories: "dieselgenerators", slug: "dieselgenerators" } },
   ];
 }
 
-// Page component
+// --- Page Component ---
 export default function ProductPage({ params }: { params: { categories: string; slug: string } }) {
   const key = params.slug.toLowerCase() as keyof typeof productsMap;
   const Component = productsMap[key];
