@@ -31,9 +31,9 @@ export default function Header() {
           <Image
             src="/Logo1.jpg"
             alt="Nihal Finserv"
-            width={125}
+            width={155}
             height={30}
-            className="h-auto w-auto"
+            
             priority
           />
         </Link>
@@ -93,7 +93,7 @@ export default function Header() {
                         <a href="/products/screens/vibratingscreen" className="hover:text-black transition-colors">15Kva - 250Kva</a> </div> </div> </div> )} </div>
 
           <a href="/gallery" className="px-3 py-2 rounded-lg hover:text-[#e96a32] transition-colors">Gallery</a>
-          <a href="/blogs" className="px-3 py-2 rounded-lg hover:text-[#e96a32] transition-colors">Blogs</a>
+          <a href="/blog" className="px-3 py-2 rounded-lg hover:text-[#e96a32] transition-colors">Blogs</a>
           <a href="/contact" className="px-3 py-2 rounded-lg hover:text-[#e96a32] transition-colors">Contact Us</a>
 
           {/* Social icons */}
@@ -210,7 +210,7 @@ export default function Header() {
 
 
           <a href="/gallery" onClick={handleMobileLinkClick} className="block px-4 py-2 rounded-md hover:bg-[#e96a32]">Gallery</a>
-          <a href="/blogs" onClick={handleMobileLinkClick} className="block px-4 py-2 rounded-md hover:bg-[#e96a32]">Blogs</a>
+          <a href="/blog" onClick={handleMobileLinkClick} className="block px-4 py-2 rounded-md hover:bg-[#e96a32]">Blogs</a>
           <a href="/contact" onClick={handleMobileLinkClick} className="block px-4 py-2 rounded-md hover:bg-[#e96a32]">Contact Us</a>
         </nav>
       )}

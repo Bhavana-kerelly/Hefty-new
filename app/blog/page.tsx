@@ -74,7 +74,7 @@ export default function BlogsPage() {
                 whileHover={{ scale: 1.05 }}
               >
                 <div className="p-4 sm:p-6 flex flex-col h-full">
-                  <Link href={`/blogs/${blog.slug}`}>
+                  <Link href={`/blog/${blog.slug}`}>
                     <h2 className="text-xl sm:text-2xl font-semibold mb-3 text-white group-hover:text-[#ec6b24] transition-colors duration-300">
                       {blog.title}
                     </h2>
