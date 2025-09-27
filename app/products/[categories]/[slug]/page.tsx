@@ -1,5 +1,4 @@
 // app/products/[categories]/[slug]/page.tsx
-
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -34,13 +33,15 @@ import WetmixMacadamPlant from "@/components/products/concretebatchingsolution/W
 
 import DieselGenerators from "@/components/products/dieselgenerators/DieselGenerators";
 
-// Route params type
 type ProductPageParams = {
   categories: string;
   slug: string;
 };
 
-// Map product slugs to components
+type ProductPageProps = {
+  params: ProductPageParams;
+};
+
 const productsMap: Record<string, React.ComponentType> = {
   crushers: Crushers,
   jawcrushers: JawCrushers,
@@ -74,10 +75,9 @@ const productsMap: Record<string, React.ComponentType> = {
   dieselgenerators: DieselGenerators,
 };
 
-// ✅ Don’t mark as async unless you fetch data
-export default function ProductPage({ params }: { params: ProductPageParams }) {
-  const category = params.categories.toLowerCase();
-  const slug = params.slug.toLowerCase();
+export default function ProductPage({ params }: ProductPageProps) {
+  const category = params.categories?.toLowerCase();
+  const slug = params.slug?.toLowerCase();
 
   const key = slug || category;
   const Component = productsMap[key];
@@ -101,10 +101,7 @@ export default function ProductPage({ params }: { params: ProductPageParams }) {
   );
 }
 
-// ✅ generateStaticParams must return an array of objects with params shape
-export async function generateStaticParams(): Promise<
-  { categories: string; slug: string }[]
-> {
+export async function generateStaticParams(): Promise<ProductPageParams[]> {
   return [
     { categories: "crushers", slug: "jawcrushers" },
     { categories: "crushers", slug: "conecrushers" },
